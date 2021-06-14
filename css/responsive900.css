@@ -1,0 +1,621 @@
+@media (min-width: 901px) and (max-width: 990px) {
+
+  body {
+    min-height: 100vh;
+    font-family: "Zen Dots", cursive;
+    background: #000000 url("../img/black2.png")center center no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: ease-in-out 300ms;
+    bottom: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  #img{
+    background: #000000 url("../img/black2.png") center center fixed;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.4; 
+    height: 101vh;
+  }
+
+  /*Header*/
+
+    .Container-header {
+      align-items: center;
+    }
+
+    .childBars {
+      position: fixed;
+      right: 16px;
+      display: block;
+      transform: scale(1);
+      color: white;
+      top: 16px;
+      background-color: transparent;
+      border: none;
+      transition: ease-in-out 400ms;
+      transform: translate(0px, 0px);
+    }
+  
+    .childBars:hover {
+      cursor: pointer;
+      transform: translate(-1.5px, 1.5px);
+      color: #18d26e;
+    }
+  
+    #fas2 {
+      display: none;
+    }
+  
+    #fas3 {
+      display: none;
+    }
+  
+    .Container-header {
+      text-align: center;
+    }
+  
+    .Container-Socials-Contact1 {
+      align-items: center;
+    }
+  
+    .Container-Socials-Contact2 {
+      margin: 0px;
+    }
+  
+    .Socials-Contact-child {
+      flex-grow: 1;
+      height: 45px;
+      padding-top: 5px;
+    }
+  
+    .NavHome {
+      margin-left: 0px;
+      width: 60%;
+      margin-top: 50vh;
+    }
+  
+    .I-am {
+      margin-left: 0px;
+      color: rgba(255, 255, 255, 0.438);
+      font-weight: 400;
+      font-size: 20px;
+    }
+  
+    .Programmer {
+      border-bottom: 2px solid #18d26e;
+      padding-bottom: 4px;
+      color: white;
+    }
+  
+    .intermitent {
+      font-size: 47px;
+      font-weight: 400;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 0px;
+      position: absolute;
+      margin-top: -11px;
+      animation: intermitente 1000ms infinite;
+    }
+  
+    .NavBar {
+      overflow: hidden;
+      flex-direction: column;
+      width: 96%;
+      background-color: rgba(0, 0, 0, 0.432);
+      left: 0px;
+      top: 50px;
+      border-radius: 6px;
+      border: 2px solid #18d26e;
+      right: 0px;
+      bottom: 0px;
+      transition: height 600ms, opacity 400ms; /* Transition para la animación */
+      opacity: 0;
+      margin-left: -0.1%;
+    }
+  
+    #fas1 {
+      font-size: 30px;
+    }
+  
+    #fas2 {
+      top: 0px;
+      transform: rotate(101deg);
+      font-size: 25px;
+    }
+  
+    #fas3 {
+      font-size: 25px;
+      position: absolute;
+      top: 1px;
+      transform: rotate(3deg);
+    }
+  
+    .NavBar .child .link {
+      display: flex;
+      font-family: "Zen Dots", cursive;
+      font-weight: 100;
+      transition: ease-in-out 230ms;
+      border-radius: 3px;
+      color: rgba(255, 255, 255, 0.897);
+      border: 2px solid transparent;
+      padding: 20px;
+    }
+  
+    .NavBar .child .link:hover {
+      cursor: pointer;
+      color: #18d26e;
+      border: 2px solid #18d26e;
+      transform: translateY(-1px);
+    }
+  
+    .NavBar .child .link:focus {
+      color: #18d26e;
+      border: 2px solid transparent;
+    }
+  
+    .NavBar .child {
+      font-size: 16px;
+      font-family: "Zen Dots", cursive;
+      border-radius: 6px;
+      width: 100%;
+    }
+  
+    .child:nth-child(1) {
+      text-align: justify;
+      border: none;
+      margin-top: 0px;
+      height: 0px;
+    }
+  
+    .child:nth-child(2) {
+      text-align: justify;
+      border: none;
+      height: 0px;
+    }
+    .child:nth-child(3) {
+      text-align: justify;
+      border: none;
+      height: 0px;
+    }
+  
+    .child:nth-child(4) {
+      text-align: justify;
+      border: none;
+      height: 0px;
+      margin-bottom: 320px;
+    }
+  
+    /*Animations faces*/
+    .FacesT {
+      transform: scale(0.6);
+      width: 230px;
+      height: 360px;
+      margin-top: 50px;
+      margin-left: 0%;
+      left: 30px;
+      background: url("../img/faceL.png") center center no-repeat;
+      animation: FacesIntermitente 7s infinite;
+      transition: ease-in-out;
+      transform: rotate(15deg);
+    }
+  
+    .FacesR {
+      margin-top: 600px;
+      right: 5%;
+      transform: scale(1.2);
+      width: 170px;
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: FacesIntermitenteR 3s infinite;
+      transition: ease-in-out;
+    }
+  
+    .FacesL {
+      margin-top: 500px;
+      left: 5%;
+      transform: scale(1.2);
+      width: 170px;
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: FacesIntermitenteL 4s infinite;
+      transition: ease-in-out;
+    }
+  
+    .FacesT1 {
+      margin-top: 1180px;
+      right: 37%;
+      transform: scale(1);
+      width: 250px;
+      height: 170px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: FacesIntermitenteT 7s infinite;
+      transition: ease-in-out;
+      position: absolute;
+    }
+  
+    .FacesB {
+      margin-top: 1350px;
+      left: 37%;
+      transform: scale(1);
+      width: 250px;
+      height: 170px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: FacesIntermitenteB 7s infinite;
+      transition: ease-in-out;
+      position: absolute;
+    }
+  
+    /*Section About*/
+    .about {
+      margin-top: 19%;
+    }
+  
+    .Container-about {
+      height: 1600px;
+      margin-left: -0.6%;
+    }
+  
+    .aboutContent {
+      display: flex;
+      transform: scale(1);
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutTitle {
+      color: rgba(255, 255, 255, 0.664);
+      font-size: 15px;
+      font-weight: bold;
+      margin: 40px 0px 10px 20px;
+      font-family: "Poppins", sans-serif;
+    }
+  
+    .aboutEnd {
+      color: #18d26e;
+      margin-top: 0px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      position: absolute;
+      font-size: 30px;
+      margin-left: 0px;
+    }
+  
+    .aboutP1 {
+      position: absolute;
+      color: rgba(255, 255, 255, 0.788);
+      font-family: "Poppins", sans-serif;
+      font-size: 19px;
+      font-weight: 100;
+      width: auto;
+      margin-left: 0px;
+      margin-top: 50px;
+      text-align: center;
+    }
+  
+    .containerImg img {
+      width: 295px;
+      height: 350px;
+      margin-left: 0px;
+      margin-top: -30px;
+      opacity: 0.9;
+    }
+  
+    .ListDates {
+      display: flex;
+      flex-direction: row;
+      height: 200px;
+      width: 70%;
+      justify-content: center;
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+  
+    .ListDates-child {
+      flex-grow: 1;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      margin-top: 90px;
+    }
+  
+    .ListDates-child ul {
+      padding-left: 0px;
+    }
+  
+    .Date {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .RespDate1 {
+      margin-top: 17px;
+      color: white;
+      font-weight: 700;
+    }
+  
+    .RespDate2 {
+      color: rgba(255, 255, 255, 0.61);
+      margin-top: 17px;
+      font-weight: 100;
+      margin-left: 5px;
+    }
+  
+    .Skills {
+      position: absolute;
+      display: flex;
+      margin-top: 630px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .SkillsDates {
+      margin-top: 60px;
+      width: 89%;
+      height: 400px;
+      display: flex;
+      margin-left: 10%;
+      position: absolute;
+    }
+  
+    .SkillsDates ul {
+      padding-left: 0px;
+    }
+  
+    .SkillsDate {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .SkillsDate-child {
+      flex-grow: 1;
+    }
+  
+    .Skills-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      color: white;
+    }
+  
+    .Skills-Container-Bar {
+      display: block;
+      width: 80%;
+      height: 13px;
+      display: flex;
+      border-radius: 2px;
+      margin-top: 10px;
+    }
+  
+  
+    .Interests {
+      position: absolute;
+      display: flex;
+      margin-top: 1070px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .InterestsDates {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      width: 78%;
+      height: 330px;
+      margin-top: 70px;
+    }
+  
+    .InterestsDate {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /*Section Services*/
+  
+    .Container-services {
+      height: 930px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -0.6%;
+    }
+  
+    .servicesContent {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 790px;
+      margin: 120px 0px 0px 0px;
+    }
+  
+    .servicesDate-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .servicesDate-child:nth-child(1) {
+      margin: 20px 10px 0px 20px;
+    }
+  
+    .servicesDate-child:nth-child(2) {
+      margin: 20px 10px 0px 10px;
+    }
+  
+    .servicesDate-child:nth-child(3) {
+      margin: 20px 20px 0px 10px;
+    }
+  
+    /*Section Contact*/
+  
+    .Container-ContactMe {
+      width: 100%;
+      height: 950px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -0.6%;
+    }
+  
+    .contactContent1 {
+      width: 100%;
+      margin: 120px 0px 0px 0px;
+    }
+  
+    .contactDate-child:nth-child(1) {
+      margin: 20px 0px 0px 20px;
+    }
+  
+    .contactDate-child:nth-child(2) {
+      margin: 20px 20px 0px 20px;
+    }
+  
+    .contactContent2 {
+      width: 96%;
+      margin: 20px 0px 0px 0px;
+    }
+  
+  
+    .your {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin: 20px 40px 20px 40px;
+      height: 100px;
+    }
+  
+    .your-child {
+      transition: ease-in-out 350ms;
+      border-radius: 2px;
+      flex-grow: 1;
+      width: 97.5%;
+    }
+  
+    .your-child:nth-child(1) {
+      margin: 0px 0px 20px 0px;
+      padding: 10px 10px 10px 10px;
+    }
+  
+    .your-child:nth-child(2) {
+      margin: 0px 0px 0px 0px;
+      padding: 10px 10px 10px 10px;
+    }
+
+
+    @keyframes FacesIntermitente {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0.5;
+        transform: rotate(-10deg);
+    
+        /*    margin-top: 145px;*/
+      }
+      50% {
+        opacity: 0.3;
+        /**    margin-left: 71%;*/
+        transform: rotate(10deg);
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  
+  
+    @keyframes FacesIntermitenteR {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+        transform: scale(0.6);
+  
+        /*    margin-top: 145px;*/
+      }
+      50% {
+        opacity: 1;
+        transform: scale(0.8);
+        /**    margin-left: 71%;*/
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    @keyframes FacesIntermitenteL {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+        transform: scale(0.6);
+  
+        /*    margin-top: 145px;*/
+      }
+      50% {
+        opacity: 1;
+        transform: scale(0.8);
+        /**    margin-left: 71%;*/
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    @keyframes FacesIntermitenteT {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+        transform: scale(0.6);
+  
+        /*    margin-top: 145px;*/
+      }
+      50% {
+        opacity: 0;
+        transform: scale(0.8);
+        /**    margin-left: 71%;*/
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    @keyframes FacesIntermitenteB {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+        transform: scale(0.6);
+  
+        /*    margin-top: 145px;*/
+      }
+      50% {
+        opacity: 0;
+        transform: scale(0.8);
+        /**    margin-left: 71%;*/
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+  
