@@ -1410,15 +1410,15 @@ function fixedNav3() {
 }
 
 //Scroll Projects
-let ProjectList = document.getElementById("Project-List");
-
 // Detectamos cuando el usuario desplace la pantalla
 document.getElementById('Project-List').onscroll = function (){
-  // Obtenemos la posicion del scroll en pantall
+
+  let ProjectList = document.getElementById("Project-List");
   let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
   let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
-  
+
+  // Obtenemos la posicion del scroll en pantall
   let scroll = ProjectList.scrollTop;
 
   // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400

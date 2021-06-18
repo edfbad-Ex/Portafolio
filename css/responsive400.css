@@ -2,7 +2,7 @@
   body {
     min-height: 100vh;
     font-family: "Zen Dots", cursive;
-    background: #000000 url("../img/black2.png") top right no-repeat;
+    background: #000000 url("../img/profile.png") center center no-repeat;
     background-size: cover;
     left: 0;
     right: 0;
@@ -13,7 +13,7 @@
   }
 
   #img {
-    background: #000000 url("../img/black2.png") top right fixed;
+    background: none;
     background-size: cover;
     position: absolute;
     z-index: -1;
