@@ -16,6 +16,212 @@ body {
   overflow-y: scroll;
 }
 
+.Container-Projects{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: auto;
+  z-index: 5;
+  transition: ease-in-out 600ms;
+  
+}
+
+#Projects{
+
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  height: 40px;
+  background-color: #18d26fde;
+  transition: ease-in-out 300ms;
+  font-family: "Zen Dots", cursive;
+  outline: none;
+
+}
+
+#Projects:hover{
+
+  transform: translate(1px, -1px);
+  cursor: pointer;
+  background-color: #18d26fef;
+
+}
+
+#Projects:focus {
+
+  background-color: #18d26fef;
+  outline: none;
+}
+
+.Container-Projects:focus{
+  
+
+
+}
+
+.Project-List{
+
+  display: flex;
+  flex-direction: column;
+  background-color: #18d26fe9;
+  width: 80%;
+  height: 0vh;
+  display: none;
+  border-radius: 4px;
+  overflow-y: scroll;
+  padding: 0px;
+
+}
+
+#Project-List-Child1{
+
+  flex-grow: 1;
+  border: 1px solid black;
+  transition: ease-in-out 600ms;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#Project-List-Child2{
+
+  flex-grow: 1;
+  border: 1px solid black;
+  transition: ease-in-out 600ms;
+
+}
+
+#Project-List-Child3{
+
+  flex-grow: 1;
+  border: 1px solid black;
+  transition: ease-in-out 600ms;
+
+}
+
+#Project-List-Child4{
+
+  flex-grow: 1;
+  border: 1px solid black;
+  transition: ease-in-out 600ms;
+
+}
+
+.Project-List-Child-Design:nth-child(1){
+
+  background: url("../img/mobile-design.jpg") top center no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+
+}
+
+.Project-List-Child-Design:nth-child(2){
+
+  background: url("../img/desktop-design.jpg") top center no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+
+}
+
+.Project-List-Child-Code{
+
+  position: fixed;
+  bottom: 16px;
+  left: 10.1%;
+  display: none;
+  width: 40%;
+  background-color: #18d26e;
+  transition: ease-in-out 500ms;
+  transform: scale(1);
+  text-align: center;
+  flex-direction: column;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+}
+
+.Project-List-Child-Web{
+
+  position: fixed;
+  bottom: 16px;
+  right: 10%;
+  width: 41%;
+  display: none;
+  background-color: #18d26e;
+  transition: ease-in-out 500ms;
+  transform: scale(1);
+  text-align: center;
+  flex-direction: column;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+}
+
+.Project-List-Child-Code > a{
+
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  transition: ease-in-out 250ms;
+
+}
+
+.Project-List-Child-Web > a{
+
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  transition: ease-in-out 250ms;
+
+}
+
+.Project-List-Child-Code > a:hover{
+
+  transform: translate(0px, -2px);
+
+}
+
+.Project-List-Child-Web > a:hover{
+
+  transform: translate(0px, -2px);
+
+}
+
+.Project-List-Child-Description{
+
+  position: fixed;
+  bottom: 59px;
+  width: 79.9%;
+  display: none;
+  background-color: #18d26fe7;
+  transition: ease-in-out 500ms;
+  transform: scale(1);
+  text-align: center;
+  flex-direction: column;
+  border: none;  
+  color: white;
+  font-size: 14px;
+
+}
+
+.Project-List-Child-Description1 > p{
+
+  margin-right: 30px;
+
+}
+
 #q {
   position: fixed;
   z-index: -2;

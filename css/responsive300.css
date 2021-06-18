@@ -11,6 +11,8 @@
       margin: 0px;
       padding: 0px;
     }
+
+
   
     #img {
       background: #000000 url("../img/black2.png") center center fixed;
@@ -274,7 +276,7 @@
     }
   
     .Container-about {
-      height: 2630px;
+      height: 3850px;
       transform: scale(0.9);
       margin-left: -0.8%;
     }
@@ -478,14 +480,14 @@
       width: 95.7%;
       margin-left: 7px;
       margin-right: 10px;
-      height: 800px;
+      height: 2000px;
       margin-top: 70px;
       position: absolute;
     }
   
     .InterestsDate {
       display: flex;
-      height: 100px;
+      height: auto;
       flex-direction: column;
     }
   

@@ -8,6 +8,21 @@ window.addEventListener("load", function () {
   let servicehead = document.getElementById("servicehead");
   let contacthead = document.getElementById("contacthead");
 
+  //Projects
+  let Projects  = document.getElementById("Projects");
+  let ContainerProjects = document.getElementById("Container-Projects");
+  let ProjectShowClose = document.getElementById("Project-Show-Close");
+  let ProjectList = document.getElementById("Project-List");
+  let ProjectListChild1 = document.getElementById("Project-List-Child1");
+  let ProjectListChild2 = document.getElementById("Project-List-Child2");
+  let ProjectListChild3 = document.getElementById("Project-List-Child3");
+  let ProjectListChild4 = document.getElementById("Project-List-Child4");
+  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+  let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
+  let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
+  let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
+
   //Media querys para ajuste de trasiciones y scale
   let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
   let mql2 = window.matchMedia("(min-width: 401px) and (max-width: 500px)");
@@ -147,6 +162,162 @@ window.addEventListener("load", function () {
       fas3.style.display = "none";
     }
   });
+
+
+  ProjectShowClose.innerHTML = "Projects Show";
+
+  Projects.addEventListener("click", function () {
+    
+    let ProjectState = ProjectShowClose.innerHTML;
+
+    if(ProjectState != "Projects Close"){
+
+      ContainerProjects. style.top = "80px";
+      ContainerProjects.style.bottom = "0vh";
+      ProjectShowClose.innerHTML = "Projects Close";
+
+      ProjectList.style.display = "flex";
+      ProjectList.style.height = "80vh";
+
+    }
+    else{
+
+      ContainerProjects. style.bottom = "0px";
+      ContainerProjects.style.top = "94vh";  
+      ProjectShowClose.innerHTML = "Projects Show";
+
+      ProjectList.style.display = "none";
+      ProjectList.style.height = "0vh";
+
+    }
+
+  });
+
+  ProjectListChild1.style.flexGrow = "1";
+  ProjectListChild2.style.flexGrow = "1";
+  ProjectListChild3.style.flexGrow = "1";
+  ProjectListChild4.style.flexGrow = "1";
+
+  ProjectListChild1.addEventListener("click", function () {
+    
+    let ProjectState = ProjectListChild2.style.flexGrow;
+
+    if(ProjectState != 0){
+
+      ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild2.style.flexGrow = "0";
+      ProjectListChild3.style.flexGrow = "0";
+      ProjectListChild4.style.flexGrow = "0";
+
+      ProjectListChildDesign1.style.height = "254vh";
+      ProjectListChildDesign1.style.transform = "scale(1)";
+
+      ProjectListChildDesign2.style.height = "100%";
+      ProjectListChildDesign2.style.transform = "scale(1)";
+
+      ProjectListChildCode.style.display = "flex";
+      ProjectListChildWeb.style.display = "flex";
+      ProjectListChildDescription.style.display = "flex";
+      ProjectListChildCode.style.opacity = "0";
+      ProjectListChildWeb.style.opacity = "0";
+      ProjectListChildDescription.style.opacity = "0";
+      
+
+    }
+    else{
+
+      ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild2.style.flexGrow = "1";
+      ProjectListChild3.style.flexGrow = "1";
+      ProjectListChild4.style.flexGrow = "1";
+
+      ProjectListChildDesign1.style.height = "auto";
+      ProjectListChildDesign1.style.transform = "scale(1)";
+
+      ProjectListChildDesign2.style.height = "auto";
+      ProjectListChildDesign2.style.transform = "scale(1)";
+
+      ProjectListChildCode.style.display = "none";
+      ProjectListChildWeb.style.display = "none";
+      ProjectListChildDescription.style.display = "none";
+      ProjectListChildCode.style.opacity = "0";
+      ProjectListChildWeb.style.opacity = "0";
+      ProjectListChildDescription.style.opacity = "0";
+      
+    }
+
+  });
+
+  ProjectListChild2.addEventListener("click", function () {
+    
+    let ProjectState = ProjectListChild3.style.flexGrow;
+
+    if(ProjectState != 0){
+
+      ProjectListChild1.style.flexGrow = "0";
+      ProjectListChild2.style.flexGrow = "1";
+      ProjectListChild3.style.flexGrow = "0";
+      ProjectListChild4.style.flexGrow = "0";
+
+    }
+    else{
+
+      ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild2.style.flexGrow = "1";
+      ProjectListChild3.style.flexGrow = "1";
+      ProjectListChild4.style.flexGrow = "1";
+
+    }
+
+  });
+
+  ProjectListChild3.addEventListener("click", function () {
+    
+    let ProjectState = ProjectListChild4.style.flexGrow;
+
+    if(ProjectState != 0){
+
+      ProjectListChild1.style.flexGrow = "0";
+      ProjectListChild2.style.flexGrow = "0";
+      ProjectListChild3.style.flexGrow = "1";
+      ProjectListChild4.style.flexGrow = "0";
+
+    }
+    else{
+
+      ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild2.style.flexGrow = "1";
+      ProjectListChild3.style.flexGrow = "1";
+      ProjectListChild4.style.flexGrow = "1";
+
+    }
+
+  });
+
+  ProjectListChild4.addEventListener("click", function () {
+    
+    let ProjectState = ProjectListChild1.style.flexGrow;
+
+    if(ProjectState != 0){
+
+      ProjectListChild1.style.flexGrow = "0";
+      ProjectListChild2.style.flexGrow = "0";
+      ProjectListChild3.style.flexGrow = "0";
+      ProjectListChild4.style.flexGrow = "1";
+
+    }
+    else{
+
+      ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild2.style.flexGrow = "1";
+      ProjectListChild3.style.flexGrow = "1";
+      ProjectListChild4.style.flexGrow = "1";
+
+    }
+
+  });
+
+
 });
 
 window.addEventListener("scroll", function () {
@@ -1238,6 +1409,62 @@ function fixedNav3() {
   }
 }
 
+//Scroll Projects
+let ProjectList = document.getElementById("Project-List");
+
+// Detectamos cuando el usuario desplace la pantalla
+document.getElementById('Project-List').onscroll = function (){
+  // Obtenemos la posicion del scroll en pantall
+  let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
+  let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
+  let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
+  
+  let scroll = ProjectList.scrollTop;
+
+  // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
+  console.log("Scroll Projects; ", scroll);
+
+  if(scroll > 70){
+
+    console.log("270");
+
+    ProjectListChildCode.style.transition = "ease-in-out 500ms";
+    ProjectListChildCode.style.opacity = "1";
+    ProjectListChildWeb.style.transition = "ease-in-out 500ms";
+    ProjectListChildWeb.style.opacity = "1";
+
+  }
+  else{
+
+    ProjectListChildCode.style.transition = "ease-in-out 500ms";
+    ProjectListChildCode.style.opacity = "0";
+    ProjectListChildWeb.style.transition = "ease-in-out 500ms";
+    ProjectListChildWeb.style.opacity = "0";
+
+  }
+
+  if(scroll > 200){
+
+    ProjectList.style.backgroundColor = "#19af5fe9";
+    ProjectList.style.transition = "ease-in-out 500ms";
+
+    ProjectListChildDescription.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescription.style.opacity = "1";
+
+  }
+  else{
+
+    ProjectList.style.backgroundColor = "#18d26fe9";
+    ProjectList.style.transition = "ease-in-out 500ms";
+
+    ProjectListChildDescription.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescription.style.opacity = "0";
+
+  }
+
+}
+
+//Hover Services
 function HoverService1() {
   let servicesDateChild1 = document.getElementById("servicesDate-child1");
   let servicesDateChild2 = document.getElementById("servicesDate-child2");
