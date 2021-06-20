@@ -125,8 +125,8 @@ body {
   filter: blur(1.5px);
   transition-property: all;
   transition-timing-function: linear;
-  transition-duration: 150ms;
-
+  transition-duration: 200ms;
+  
 }
 
 .Project-List-Child-Design:nth-child(2){
@@ -139,14 +139,7 @@ body {
   filter: blur(1.5px);
   transition-property: all;
   transition-timing-function: linear;
-  transition-duration: 150ms;
-
-}
-
-.Project-List-Child-Design:nth-child(1):hover,
-.Project-List-Child-Design:nth-child(2):hover {
-
-  filter: blur(0px);
+  transition-duration: 200ms;
 
 }
 

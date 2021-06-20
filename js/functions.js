@@ -1462,6 +1462,45 @@ document.getElementById('Project-List').onscroll = function (){
 
 }
 
+function FocusDesign1() {
+
+  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+
+  ProjectListChildDesign1.style.filter = "blur(0px)";
+  ProjectListChildDesign2.style.filter = "blur(0px)";
+
+}
+
+function noFocusDesign1() {
+  
+  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+
+  ProjectListChildDesign1.style.filter = "blur(1.5px)";
+  ProjectListChildDesign2.style.filter = "blur(1.5px)";
+
+}
+
+function FocusDesign2() {
+
+  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+
+  ProjectListChildDesign1.style.filter = "blur(0px)";
+  ProjectListChildDesign2.style.filter = "blur(0px)";
+}
+
+function noFocusDesign2() {
+  
+  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+
+  ProjectListChildDesign1.style.filter = "blur(1.5px)";
+  ProjectListChildDesign2.style.filter = "blur(1.5px)";
+
+}
+
 //Hover Services
 function HoverService1() {
   let servicesDateChild1 = document.getElementById("servicesDate-child1");
