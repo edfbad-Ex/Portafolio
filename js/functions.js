@@ -22,6 +22,7 @@ window.addEventListener("load", function () {
   let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
   let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
+  let Down = document.getElementById("Down");
 
   //Media querys para ajuste de trasiciones y scale
   let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
@@ -219,7 +220,8 @@ window.addEventListener("load", function () {
       ProjectListChildCode.style.opacity = "0";
       ProjectListChildWeb.style.opacity = "0";
       ProjectListChildDescription.style.opacity = "0";
-      
+
+      Down.style.display = "flex";
 
     }
     else{
@@ -241,6 +243,8 @@ window.addEventListener("load", function () {
       ProjectListChildCode.style.opacity = "0";
       ProjectListChildWeb.style.opacity = "0";
       ProjectListChildDescription.style.opacity = "0";
+
+      Down.style.display = "none";
       
     }
 
@@ -257,6 +261,8 @@ window.addEventListener("load", function () {
       ProjectListChild3.style.flexGrow = "0";
       ProjectListChild4.style.flexGrow = "0";
 
+      Down.style.display = "flex";
+
     }
     else{
 
@@ -264,6 +270,8 @@ window.addEventListener("load", function () {
       ProjectListChild2.style.flexGrow = "1";
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "1";
+
+      Down.style.display = "none";
 
     }
 
@@ -280,6 +288,8 @@ window.addEventListener("load", function () {
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "0";
 
+      Down.style.display = "flex";
+
     }
     else{
 
@@ -287,6 +297,8 @@ window.addEventListener("load", function () {
       ProjectListChild2.style.flexGrow = "1";
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "1";
+
+      Down.style.display = "none";
 
     }
 
@@ -303,6 +315,8 @@ window.addEventListener("load", function () {
       ProjectListChild3.style.flexGrow = "0";
       ProjectListChild4.style.flexGrow = "1";
 
+      Down.style.display = "flex";
+
     }
     else{
 
@@ -310,6 +324,8 @@ window.addEventListener("load", function () {
       ProjectListChild2.style.flexGrow = "1";
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "1";
+
+      Down.style.display = "none";
 
     }
 
@@ -1415,6 +1431,7 @@ document.getElementById('Project-List').onscroll = function (){
   let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
   let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
+  let Down = document.getElementById("Down");
 
   // Obtenemos la posicion del scroll en pantall
   let scroll = ProjectList.scrollTop;
@@ -1459,6 +1476,18 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildDescription.style.opacity = "0";
 
   }
+
+  if(scroll > 300){
+
+    Down.style.transform = "rotate(0deg)";
+
+  }
+  else{
+
+    Down.style.transform = "rotate(180deg)";
+
+  }
+
 
 }
 
