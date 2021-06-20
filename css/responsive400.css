@@ -202,7 +202,7 @@
     height: 360px;
     margin-top: 50px;
     margin-left: 0%;
-    left: 30px;
+    left: 15vh;
     background: url("../img/faceR.png") center center no-repeat;
     animation: FacesIntermitente 7s infinite;
     transition: ease-in-out;

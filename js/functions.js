@@ -149,14 +149,12 @@ window.addEventListener("load", function () {
     if (navbar_position != 1) {
       navBar.style.height = `${navbar_height}px`;
       navBar.style.opacity = "1";
-      console.log("visible");
       fas1.style.display = "none";
       fas2.style.display = "block";
       fas3.style.display = "block";
     } else {
       navBar.style.height = 0;
       navBar.style.opacity = "0";
-      console.log("hidden");
       fas1.style.display = "block";
       fas2.style.display = "none";
       fas3.style.display = "none";
@@ -177,7 +175,7 @@ window.addEventListener("load", function () {
       ProjectShowClose.innerHTML = "Projects Close";
 
       ProjectList.style.display = "flex";
-      ProjectList.style.height = "80vh";
+      ProjectList.style.height = "100vh";
 
     }
     else{
@@ -193,10 +191,25 @@ window.addEventListener("load", function () {
 
   });
 
-  ProjectListChild1.style.flexGrow = "1";
+  ProjectListChild1.style.flexGrow = "";
+  ProjectListChild1.style.filter = "blur(1.5px)";
+
   ProjectListChild2.style.flexGrow = "1";
+  ProjectListChild2.style.filter = "blur(1.5px)";
+
   ProjectListChild3.style.flexGrow = "1";
+  ProjectListChild3.style.filter = "blur(1.5px)";
+
   ProjectListChild4.style.flexGrow = "1";
+  ProjectListChild4.style.filter = "blur(1.5px)";
+
+  ProjectListChildDesign1.style.transitionProperty = "height, transform";
+  ProjectListChildDesign1.style.transitionDuration = "600ms";
+  ProjectListChildDesign1.style.transitionTimingFunction = "ease-in-out";
+
+  ProjectListChildDesign2.style.transitionProperty = "height, transform";
+  ProjectListChildDesign2.style.transitionDuration = "600ms";
+  ProjectListChildDesign2.style.transitionTimingFunction = "ease-in-out";
 
   ProjectListChild1.addEventListener("click", function () {
     
@@ -205,9 +218,16 @@ window.addEventListener("load", function () {
     if(ProjectState != 0){
 
       ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild1.style.filter = "blur(0px)";
+      
       ProjectListChild2.style.flexGrow = "0";
+      ProjectListChild2.style.filter = "blur(0px)";
+      
       ProjectListChild3.style.flexGrow = "0";
+      ProjectListChild3.style.filter = "blur(0px)";
+      
       ProjectListChild4.style.flexGrow = "0";
+      ProjectListChild4.style.filter = "blur(0px)";
 
       ProjectListChildDesign1.style.height = "254vh";
       ProjectListChildDesign1.style.transform = "scale(1)";
@@ -226,10 +246,17 @@ window.addEventListener("load", function () {
     }
     else{
 
-      ProjectListChild1.style.flexGrow = "1";
-      ProjectListChild2.style.flexGrow = "1";
-      ProjectListChild3.style.flexGrow = "1";
-      ProjectListChild4.style.flexGrow = "1";
+      ProjectListChild1.style.flexGrow = "1.5";
+      ProjectListChild1.style.filter = "blur(1px)";
+    
+      ProjectListChild2.style.flexGrow = "1.5";
+      ProjectListChild2.style.filter = "blur(1px)";
+    
+      ProjectListChild3.style.flexGrow = "1.5";
+      ProjectListChild3.style.filter = "blur(1px)";
+    
+      ProjectListChild4.style.flexGrow = "1.5";
+      ProjectListChild4.style.filter = "blur(1px)";
 
       ProjectListChildDesign1.style.height = "auto";
       ProjectListChildDesign1.style.transform = "scale(1)";

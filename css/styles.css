@@ -27,7 +27,7 @@ body {
   bottom: 0px;
   height: auto;
   z-index: 5;
-  transition: ease-in-out 600ms;
+  transition: ease-out 700ms;
   
 }
 
@@ -40,7 +40,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   height: 40px;
-  background-color: #18d26fde;
+  background-color: rgba(24, 210, 111, 0.900);
   transition: ease-in-out 300ms;
   font-family: "Zen Dots", cursive;
   outline: none;
@@ -51,19 +51,19 @@ body {
 
   transform: translate(1px, -1px);
   cursor: pointer;
-  background-color: #18d26fef;
+  background-color: rgba(24, 210, 111);
 
 }
 
 #Projects:focus {
 
-  background-color: #18d26fef;
+  background-color: rgba(24, 210, 111);
   outline: none;
 }
 
 .Container-Projects:focus{
   
-
+  outline: none;
 
 }
 
@@ -84,8 +84,8 @@ body {
 #Project-List-Child1{
 
   flex-grow: 1;
-  border: 1px solid black;
-  transition: ease-in-out 600ms;
+  border: 1px solid white;
+  transition: ease-in-out 700ms;
   display: flex;
   flex-direction: row;
 
@@ -94,24 +94,24 @@ body {
 #Project-List-Child2{
 
   flex-grow: 1;
-  border: 1px solid black;
-  transition: ease-in-out 600ms;
+  border: 1px solid white;
+  transition: ease-in-out 700ms;
 
 }
 
 #Project-List-Child3{
 
   flex-grow: 1;
-  border: 1px solid black;
-  transition: ease-in-out 600ms;
+  border: 1px solid white;
+  transition: ease-in-out 700ms;
 
 }
 
 #Project-List-Child4{
 
   flex-grow: 1;
-  border: 1px solid black;
-  transition: ease-in-out 600ms;
+  border: 1px solid white;
+  transition: ease-in-out 700ms;
 
 }
 
@@ -135,6 +135,17 @@ body {
 
 }
 
+.Project-List-Child-.Project-List-Child-Design:nth-child(1)::after,
+.Project-List-Child-.Project-List-Child-Design:nth-child(1)::before,
+.Project-List-Child-.Project-List-Child-Design:nth-child(2)::after,
+.Project-List-Child-.Project-List-Child-Design:nth-child(2)::before{
+
+  transition-property: height;
+  transition: ease-in-out 3s linear;
+
+}
+
+
 .Project-List-Child-Code{
 
   position: fixed;
@@ -149,6 +160,7 @@ body {
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+  border-bottom-left-radius: 4px;
 
 }
 
@@ -166,6 +178,7 @@ body {
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+  border-bottom-right-radius: 4px;
 
 }
 
@@ -327,6 +340,13 @@ body {
   letter-spacing: 2px;
   animation: glitch-skew 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s infinite;
   width: 80%;
+  outline: none;
+}
+
+.NavHome:focus{
+
+  outline: none;
+
 }
 
 .point1 {
@@ -1007,24 +1027,28 @@ textarea::placeholder {
   color: white;
   font-size: 20px;
   transition: ease-in-out 310ms;
+  outline: none;
 }
 
 .icofont-facebook {
   color: white;
   font-size: 20px;
   transition: ease-in-out 310ms;
+  outline: none;
 }
 
 .icofont-instagram {
   color: white;
   font-size: 20px;
   transition: ease-in-out 310ms;
+  outline: none;
 }
 
 .icofont-skype {
   color: white;
   font-size: 20px;
   transition: ease-in-out 310ms;
+  outline: none;
 }
 
 .icofont-twitter:hover,
@@ -1032,6 +1056,15 @@ textarea::placeholder {
 .icofont-instagram:hover,
 .icofont-skype:hover {
   color: #18d26e;
+}
+
+.icofont-twitter:focus,
+.icofont-facebook:focus,
+.icofont-instagram:focus,
+.icofont-skype:focus {
+
+  outline: none;
+
 }
 
 .contactDates {
@@ -1114,6 +1147,13 @@ textarea::placeholder {
   height: 45px;
   background-color: #18d26fb6;
   transition: ease-in-out 300ms;
+  outline: none;
+}
+
+.message-child:nth-child(3):focus{
+
+  outline: none;
+
 }
 
 .message-child:nth-child(3):hover {
@@ -1345,4 +1385,11 @@ svg {
   position: absolute;
   display: none;
   transform: scale(0);
+  outline: none;
+}
+
+.childBars:focus {
+
+  outline: none;
+
 }
