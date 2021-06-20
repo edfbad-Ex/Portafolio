@@ -23,6 +23,8 @@ window.addEventListener("load", function () {
   let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
   let Down = document.getElementById("Down");
+  let ProjectListChildDescriptionTechnologies = document.getElementById("Project-List-Child-Description-Technologies");
+  let TitleTechnologies = document.getElementById("Title-Technologies");
 
   //Media querys para ajuste de trasiciones y scale
   let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
@@ -197,6 +199,8 @@ window.addEventListener("load", function () {
   ProjectListChild3.style.flexGrow = "1";
   ProjectListChild4.style.flexGrow = "1";
 
+  TitleTechnologies.style.margin = "5px";
+
   ProjectListChild1.addEventListener("click", function () {
     
     let ProjectState = ProjectListChild2.style.flexGrow;
@@ -223,6 +227,12 @@ window.addEventListener("load", function () {
 
       Down.style.display = "flex";
 
+      ProjectListChildDescriptionTechnologies.style.display = "flex";
+
+
+      TitleTechnologies.innerHTML = "Site created for the bank (easybank) with React JS and CSS (Flex Box)";
+      
+
     }
     else{
 
@@ -245,6 +255,10 @@ window.addEventListener("load", function () {
       ProjectListChildDescription.style.opacity = "0";
 
       Down.style.display = "none";
+
+      ProjectListChildDescriptionTechnologies.style.display = "none";
+      
+      TitleTechnologies.innerHTML = "";
       
     }
 
@@ -263,6 +277,10 @@ window.addEventListener("load", function () {
 
       Down.style.display = "flex";
 
+      ProjectListChildDescriptionTechnologies.style.display = "flex";
+      
+      TitleTechnologies.innerHTML = "Project number 2 in progress ..";
+
     }
     else{
 
@@ -272,6 +290,10 @@ window.addEventListener("load", function () {
       ProjectListChild4.style.flexGrow = "1";
 
       Down.style.display = "none";
+
+      ProjectListChildDescriptionTechnologies.style.display = "none";
+      
+      TitleTechnologies.innerHTML = "";
 
     }
 
@@ -290,6 +312,10 @@ window.addEventListener("load", function () {
 
       Down.style.display = "flex";
 
+      ProjectListChildDescriptionTechnologies.style.display = "flex";
+      
+      TitleTechnologies.innerHTML = "Project number 3 in progress ..";
+
     }
     else{
 
@@ -299,6 +325,10 @@ window.addEventListener("load", function () {
       ProjectListChild4.style.flexGrow = "1";
 
       Down.style.display = "none";
+
+      ProjectListChildDescriptionTechnologies.style.display = "none";
+      
+      TitleTechnologies.innerHTML = "";
 
     }
 
@@ -317,6 +347,10 @@ window.addEventListener("load", function () {
 
       Down.style.display = "flex";
 
+      ProjectListChildDescriptionTechnologies.style.display = "flex";
+      
+      TitleTechnologies.innerHTML = "Project number 4 in progress ..";
+
     }
     else{
 
@@ -326,6 +360,10 @@ window.addEventListener("load", function () {
       ProjectListChild4.style.flexGrow = "1";
 
       Down.style.display = "none";
+
+      ProjectListChildDescriptionTechnologies.style.display = "none";
+      
+      TitleTechnologies.innerHTML = "";
 
     }
 
@@ -1491,44 +1529,44 @@ document.getElementById('Project-List').onscroll = function (){
 
 }
 
-function FocusDesign1() {
+//function FocusDesign1() {
 
-  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
-  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+//  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+//  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
 
-  ProjectListChildDesign1.style.filter = "blur(0px)";
-  ProjectListChildDesign2.style.filter = "blur(0px)";
+//  ProjectListChildDesign1.style.filter = "blur(0px)";
+//  ProjectListChildDesign2.style.filter = "blur(0px)";
 
-}
+//}
 
-function noFocusDesign1() {
+//function noFocusDesign1() {
   
-  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
-  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+//  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+//  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
 
-  ProjectListChildDesign1.style.filter = "blur(1.5px)";
-  ProjectListChildDesign2.style.filter = "blur(1.5px)";
+//  ProjectListChildDesign1.style.filter = "blur(1.5px)";
+//  ProjectListChildDesign2.style.filter = "blur(1.5px)";
 
-}
+//}
 
-function FocusDesign2() {
+//function FocusDesign2() {
 
-  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
-  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+//  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+//  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
 
-  ProjectListChildDesign1.style.filter = "blur(0px)";
-  ProjectListChildDesign2.style.filter = "blur(0px)";
-}
+//  ProjectListChildDesign1.style.filter = "blur(0px)";
+//  ProjectListChildDesign2.style.filter = "blur(0px)";
+//}
 
-function noFocusDesign2() {
+//function noFocusDesign2() {
   
-  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
-  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
+//  let ProjectListChildDesign1 = document.getElementById("Project-List-Child-Design1");
+//  let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
 
-  ProjectListChildDesign1.style.filter = "blur(1.5px)";
-  ProjectListChildDesign2.style.filter = "blur(1.5px)";
+//  ProjectListChildDesign1.style.filter = "blur(1.5px)";
+//  ProjectListChildDesign2.style.filter = "blur(1.5px)";
 
-}
+//}
 
 //Hover Services
 function HoverService1() {
