@@ -192,8 +192,6 @@ window.addEventListener("load", function () {
   });
 
   ProjectListChild1.style.flexGrow = "1";
-  ProjectListChild1.style.filter = "blur(1.5px)";
-
   ProjectListChild2.style.flexGrow = "1";
   ProjectListChild3.style.flexGrow = "1";
   ProjectListChild4.style.flexGrow = "1";
@@ -205,8 +203,6 @@ window.addEventListener("load", function () {
     if(ProjectState != 0){
 
       ProjectListChild1.style.flexGrow = "1";
-      ProjectListChild1.style.filter = "blur(0px)";
-  
       ProjectListChild2.style.flexGrow = "0";
       ProjectListChild3.style.flexGrow = "0";
       ProjectListChild4.style.flexGrow = "0";
@@ -229,8 +225,6 @@ window.addEventListener("load", function () {
     else{
 
       ProjectListChild1.style.flexGrow = "1";
-      ProjectListChild1.style.filter = "blur(1.5px)";
-      
       ProjectListChild2.style.flexGrow = "1";
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "1";
