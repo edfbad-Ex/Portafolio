@@ -192,17 +192,11 @@ window.addEventListener("load", function () {
   });
 
   ProjectListChild1.style.flexGrow = "1";
+  ProjectListChild1.style.filter = "blur(1.5px)";
+
   ProjectListChild2.style.flexGrow = "1";
   ProjectListChild3.style.flexGrow = "1";
   ProjectListChild4.style.flexGrow = "1";
-
-  ProjectListChildDesign1.style.transitionProperty = "height, transform";
-  ProjectListChildDesign1.style.transitionDuration = "600ms";
-  ProjectListChildDesign1.style.transitionTimingFunction = "ease-in-out";
-
-  ProjectListChildDesign2.style.transitionProperty = "height, transform";
-  ProjectListChildDesign2.style.transitionDuration = "600ms";
-  ProjectListChildDesign2.style.transitionTimingFunction = "ease-in-out";
 
   ProjectListChild1.addEventListener("click", function () {
     
@@ -211,6 +205,8 @@ window.addEventListener("load", function () {
     if(ProjectState != 0){
 
       ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild1.style.filter = "blur(0px)";
+  
       ProjectListChild2.style.flexGrow = "0";
       ProjectListChild3.style.flexGrow = "0";
       ProjectListChild4.style.flexGrow = "0";
@@ -233,6 +229,8 @@ window.addEventListener("load", function () {
     else{
 
       ProjectListChild1.style.flexGrow = "1";
+      ProjectListChild1.style.filter = "blur(1.5px)";
+      
       ProjectListChild2.style.flexGrow = "1";
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "1";
