@@ -197,14 +197,14 @@ window.addEventListener("load", function () {
   ProjectListChild4.style.flexGrow = "1";
 
   ProjectListChildDesign1.style.transitionProperty = "height, transform, filter";
-  ProjectListChildDesign1.style.transitionDuration = "600ms";
+  ProjectListChildDesign1.style.transitionDuration = "300ms";
   ProjectListChildDesign1.style.filter = "blur(3px)";
-  ProjectListChildDesign1.style.transitionTimingFunction = "ease-in-out";
+  ProjectListChildDesign1.style.transitionTimingFunction = "ease-in";
 
   ProjectListChildDesign2.style.transitionProperty = "height, transform, filter";
-  ProjectListChildDesign2.style.transitionDuration = "600ms";
+  ProjectListChildDesign2.style.transitionDuration = "300ms";
   ProjectListChildDesign2.style.filter = "blur(3px)";
-  ProjectListChildDesign2.style.transitionTimingFunction = "ease-in-out";
+  ProjectListChildDesign2.style.transitionTimingFunction = "ease-in";
 
   ProjectListChild1.addEventListener("click", function () {
     
