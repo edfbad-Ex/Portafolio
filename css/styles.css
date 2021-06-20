@@ -123,6 +123,9 @@ body {
   height: auto;
   transform: scale(1);
   filter: blur(1.5px);
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 150ms;
 
 }
 
@@ -134,6 +137,9 @@ body {
   height: auto;
   transform: scale(1);
   filter: blur(1.5px);
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 150ms;
 
 }
 
