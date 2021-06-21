@@ -25,6 +25,7 @@ window.addEventListener("load", function () {
   let Down = document.getElementById("Down");
   let ProjectListChildDescriptionTechnologies = document.getElementById("Project-List-Child-Description-Technologies");
   let TitleTechnologies = document.getElementById("Title-Technologies");
+  let ProjectListChildDescriptionTechnologiesSkills = document.getElementById("Project-List-Child-Description-Technologies-Skills");
 
   //Media querys para ajuste de trasiciones y scale
   let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
@@ -232,6 +233,10 @@ window.addEventListener("load", function () {
 
       TitleTechnologies.innerHTML = "Site created for the bank (easybank) with React JS and CSS (Flex Box)";
       
+      ProjectListChildDescriptionTechnologiesSkills.style.display = "flex";
+      ProjectListChildDescriptionTechnologiesSkills.style.bottom = "3.1%";
+      ProjectListChildDescriptionTechnologiesSkills.style.borderBottomLeftRadius = "4px";
+      ProjectListChildDescriptionTechnologiesSkills.style.borderBottomRightRadius = "4px";
 
     }
     else{
@@ -259,6 +264,8 @@ window.addEventListener("load", function () {
       ProjectListChildDescriptionTechnologies.style.display = "none";
       
       TitleTechnologies.innerHTML = "";
+
+      ProjectListChildDescriptionTechnologiesSkills.style.display = "none";
       
     }
 
@@ -1470,6 +1477,7 @@ document.getElementById('Project-List').onscroll = function (){
   let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
   let Down = document.getElementById("Down");
+  let ProjectListChildDescriptionTechnologiesSkills = document.getElementById("Project-List-Child-Description-Technologies-Skills");
 
   // Obtenemos la posicion del scroll en pantall
   let scroll = ProjectList.scrollTop;
@@ -1486,6 +1494,8 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildWeb.style.transition = "ease-in-out 500ms";
     ProjectListChildWeb.style.opacity = "1";
 
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "10.8%";
+
   }
   else{
 
@@ -1493,6 +1503,8 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildCode.style.opacity = "0";
     ProjectListChildWeb.style.transition = "ease-in-out 500ms";
     ProjectListChildWeb.style.opacity = "0";
+
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "3.1%";
 
   }
 
@@ -1503,6 +1515,8 @@ document.getElementById('Project-List').onscroll = function (){
 
     ProjectListChildDescription.style.transition = "ease-in-out 500ms";
     ProjectListChildDescription.style.opacity = "1";
+
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "19%";
 
   }
   else{
