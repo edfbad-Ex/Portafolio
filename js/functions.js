@@ -1476,8 +1476,9 @@ document.getElementById('Project-List').onscroll = function (){
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
   let Down = document.getElementById("Down");
   let ProjectListChildDescriptionTechnologiesSkills = document.getElementById("Project-List-Child-Description-Technologies-Skills");
-
-  // Obtenemos la posicion del scroll en pantall
+  let ProjectListChildDescription3 = document.getElementById("Project-List-Child-Description3");
+  
+  // Obtenemos la posicion del scroll en pantalla
   let scroll = ProjectList.scrollTop;
 
   // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
@@ -1494,6 +1495,9 @@ document.getElementById('Project-List').onscroll = function (){
 
     ProjectListChildDescriptionTechnologiesSkills.style.bottom = "59px";
 
+    ProjectListChildDescription3.style.borderBottomLeftRadius = "0px";
+    ProjectListChildDescription3.style.borderBottomRightRadius = "0px";
+
   }
   else{
 
@@ -1503,6 +1507,9 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildWeb.style.opacity = "0";
 
     ProjectListChildDescriptionTechnologiesSkills.style.bottom = "16px";
+
+    ProjectListChildDescription3.style.borderBottomLeftRadius = "4px";
+    ProjectListChildDescription3.style.borderBottomRightRadius = "4px";
 
   }
 
