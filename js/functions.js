@@ -234,7 +234,7 @@ window.addEventListener("load", function () {
       TitleTechnologies.innerHTML = "Site created for the bank (easybank) with React JS and CSS (Flex Box)";
       
       ProjectListChildDescriptionTechnologiesSkills.style.display = "flex";
-      ProjectListChildDescriptionTechnologiesSkills.style.bottom = "3.1%";
+      ProjectListChildDescriptionTechnologiesSkills.style.bottom = "15.5px";
       ProjectListChildDescriptionTechnologiesSkills.style.borderBottomLeftRadius = "4px";
       ProjectListChildDescriptionTechnologiesSkills.style.borderBottomRightRadius = "4px";
 
@@ -1494,7 +1494,7 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildWeb.style.transition = "ease-in-out 500ms";
     ProjectListChildWeb.style.opacity = "1";
 
-    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "10.8%";
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "59px";
 
   }
   else{
@@ -1504,7 +1504,7 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildWeb.style.transition = "ease-in-out 500ms";
     ProjectListChildWeb.style.opacity = "0";
 
-    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "3.1%";
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "15.5px";
 
   }
 
@@ -1516,7 +1516,7 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildDescription.style.transition = "ease-in-out 500ms";
     ProjectListChildDescription.style.opacity = "1";
 
-    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "19%";
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "104px";
 
   }
   else{
