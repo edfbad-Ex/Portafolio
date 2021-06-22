@@ -1,5 +1,6 @@
 window.addEventListener("load", function () {
-  console.log("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
+  
+  //console.log("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
   let childBars = document.getElementById("childBars");
   let navBar = document.getElementById("navBar");
   let fas1 = document.getElementById("fas1");
@@ -1521,7 +1522,7 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildDescription.style.transition = "ease-in-out 500ms";
     ProjectListChildDescription.style.opacity = "1";
 
-    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "103px";
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "104px";
 
   }
   else{
