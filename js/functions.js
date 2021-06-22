@@ -1494,7 +1494,7 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildWeb.style.transition = "ease-in-out 500ms";
     ProjectListChildWeb.style.opacity = "1";
 
-    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "58px";
+    ProjectListChildDescriptionTechnologiesSkills.style.bottom = "57px";
 
     ProjectListChildDescription3.style.borderBottomLeftRadius = "0px";
     ProjectListChildDescription3.style.borderBottomRightRadius = "0px";
