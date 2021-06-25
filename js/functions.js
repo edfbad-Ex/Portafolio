@@ -28,6 +28,16 @@ window.addEventListener("load", function () {
   let TitleTechnologies = document.getElementById("Title-Technologies");
   let ProjectListChildDescriptionTechnologiesSkills = document.getElementById("Project-List-Child-Description-Technologies-Skills");
 
+  let ProjectListChildDesign3 = document.getElementById("Project-List-Child-Design3");
+  let ProjectListChildDesign4 = document.getElementById("Project-List-Child-Design4");
+  let ProjectListChildCodeCV = document.getElementById("Project-List-Child-Code-CV");
+  let ProjectListChildWebCV = document.getElementById("Project-List-Child-Web-CV");
+  let ProjectListChildDescriptionCV = document.getElementById("Project-List-Child-Description-CV");
+  let ProjectListChildDescriptionTechnologiesCV = document.getElementById("Project-List-Child-Description-Technologies-CV");
+  let TitleTechnologiesCV = document.getElementById("Title-Technologies-CV");
+  let ProjectListChildDescriptionTechnologiesSkillsCV = document.getElementById("Project-List-Child-Description-Technologies-Skills-CV");
+
+
   //Media querys para ajuste de trasiciones y scale
   let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
   let mql2 = window.matchMedia("(min-width: 401px) and (max-width: 500px)");
@@ -271,6 +281,19 @@ window.addEventListener("load", function () {
   });
 
   ProjectListChild2.addEventListener("click", function () {
+
+      //Media querys para ajuste de trasiciones y scale
+      let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
+      let mql2 = window.matchMedia("(min-width: 401px) and (max-width: 500px)");
+      let mql3 = window.matchMedia("(min-width: 501px) and (max-width: 600px)");
+      let mql4 = window.matchMedia("(min-width: 601px) and (max-width: 700px)");
+      let mql5 = window.matchMedia("(min-width: 701px) and (max-width: 800px)");
+      let mql6 = window.matchMedia("(min-width: 801px) and (max-width: 900px)");
+      let mql7 = window.matchMedia("(min-width: 901px) and (max-width: 990px)");
+      let mql8 = window.matchMedia("(min-width: 991px) and (max-width: 1100px)");
+      let mql9 = window.matchMedia("(min-width: 1101px) and (max-width: 1200px)");
+      let mql10 = window.matchMedia("(min-width: 1201px) and (max-width: 1300px)");
+
     
     let ProjectState = ProjectListChild3.style.flexGrow;
 
@@ -280,12 +303,97 @@ window.addEventListener("load", function () {
       ProjectListChild2.style.flexGrow = "1";
       ProjectListChild3.style.flexGrow = "0";
       ProjectListChild4.style.flexGrow = "0";
+      
+      ProjectListChildDesign3.style.height = "140vh";
+      ProjectListChildDesign3.style.transform = "scale(1)";
+
+      ProjectListChildDesign4.style.height = "100%";
+      ProjectListChildDesign4.style.transform = "scale(1)";
+
+      ProjectListChildCodeCV.style.display = "flex";
+      ProjectListChildWebCV.style.display = "flex";
+      ProjectListChildDescriptionCV.style.display = "flex";
+      ProjectListChildCodeCV.style.opacity = "0";
+      ProjectListChildWebCV.style.opacity = "0";
+      ProjectListChildDescriptionCV.style.opacity = "0";
 
       Down.style.display = "flex";
+      
 
       ProjectListChildDescriptionTechnologies.style.display = "flex";
+      ProjectListChildDescriptionTechnologies.style.width = "100%";
+
+
+      TitleTechnologies.innerHTML = "Site created for my CV with React JS and CSS (Flex Box)";
       
-      TitleTechnologies.innerHTML = "Project number 2 in progress ..";
+      ProjectListChildDescriptionTechnologiesSkillsCV.style.display = "flex";
+      ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "16px";
+
+      if(mql1.matches){
+
+        ProjectListChildDesign3.style.height = "134vh";
+
+      }
+
+      else if(mql2.matches){
+
+        ProjectListChildDesign3.style.height = "164vh";
+
+      }
+
+      else if(mql3.matches){
+
+        ProjectListChildDesign3.style.height = "194vh";
+
+      }
+
+      else if(mql4.matches){
+
+        ProjectListChildDesign3.style.height = "223.5vh";
+
+      }
+
+      else if(mql5.matches){
+
+        ProjectListChildDesign3.style.height = "253vh";
+
+      }
+      
+      else if(mql6.matches){
+
+        ProjectListChildDesign3.style.height = "282.5vh";
+
+      }
+
+      else if(mql7.matches){
+
+        ProjectListChildDesign3.style.height = "312vh";
+
+      }
+
+      else if(mql8.matches){
+
+        ProjectListChildDesign3.style.height = "341.5vh";
+
+      }
+
+      else if(mql9.matches){
+
+        ProjectListChildDesign3.style.height = "371vh";
+
+      }
+
+      else if(mql10.matches){
+
+        ProjectListChildDesign3.style.height = "400.5vh";
+
+      }
+
+      else{
+
+        ProjectListChildDesign3.style.height = "425vh";
+
+      }
 
     }
     else{
@@ -295,12 +403,27 @@ window.addEventListener("load", function () {
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "1";
 
+      ProjectListChildDesign3.style.height = "auto";
+      ProjectListChildDesign3.style.transform = "scale(1)";
+
+      ProjectListChildDesign4.style.height = "auto";
+      ProjectListChildDesign4.style.transform = "scale(1)";
+
+      ProjectListChildCodeCV.style.display = "none";
+      ProjectListChildWebCV.style.display = "none";
+      ProjectListChildDescriptionCV.style.display = "none";
+      ProjectListChildCodeCV.style.opacity = "0";
+      ProjectListChildWebCV.style.opacity = "0";
+      ProjectListChildDescriptionCV.style.opacity = "0";
+
       Down.style.display = "none";
 
       ProjectListChildDescriptionTechnologies.style.display = "none";
       
-      TitleTechnologies.innerHTML = "";
+      TitleTechnologiesCV.innerHTML = "";
 
+      ProjectListChildDescriptionTechnologiesSkillsCV.style.display = "none";
+      
     }
 
   });
@@ -1471,6 +1594,7 @@ function fixedNav3() {
 // Detectamos cuando el usuario desplace la pantalla
 document.getElementById('Project-List').onscroll = function (){
 
+  //Project 1
   let ProjectList = document.getElementById("Project-List");
   let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
   let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
@@ -1479,6 +1603,13 @@ document.getElementById('Project-List').onscroll = function (){
   let ProjectListChildDescriptionTechnologiesSkills = document.getElementById("Project-List-Child-Description-Technologies-Skills");
   let ProjectListChildDescription3 = document.getElementById("Project-List-Child-Description3");
   
+  //Project 2
+  let ProjectListChildCodeCV = document.getElementById("Project-List-Child-Code-CV");
+  let ProjectListChildWebCV = document.getElementById("Project-List-Child-Web-CV");
+  let ProjectListChildDescriptionCV = document.getElementById("Project-List-Child-Description-CV");
+  let ProjectListChildDescriptionTechnologiesSkillsCV = document.getElementById("Project-List-Child-Description-Technologies-Skills-CV");
+  let ProjectListChildDescription3CV = document.getElementById("Project-List-Child-Description3-CV");
+
   // Obtenemos la posicion del scroll en pantalla
   let scroll = ProjectList.scrollTop;
 
@@ -1489,6 +1620,7 @@ document.getElementById('Project-List').onscroll = function (){
 
     console.log("270");
 
+    //Project 1
     ProjectListChildCode.style.transition = "ease-in-out 500ms";
     ProjectListChildCode.style.opacity = "1";
     ProjectListChildWeb.style.transition = "ease-in-out 500ms";
@@ -1499,9 +1631,21 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildDescription3.style.borderBottomLeftRadius = "0px";
     ProjectListChildDescription3.style.borderBottomRightRadius = "0px";
 
+    //Project 2
+    ProjectListChildCodeCV.style.transition = "ease-in-out 500ms";
+    ProjectListChildCodeCV.style.opacity = "1";
+    ProjectListChildWebCV.style.transition = "ease-in-out 500ms";
+    ProjectListChildWebCV.style.opacity = "1";
+
+    ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "58px";
+
+    ProjectListChildDescription3CV.style.borderBottomLeftRadius = "0px";
+    ProjectListChildDescription3CV.style.borderBottomRightRadius = "0px";
+
   }
   else{
 
+    //Project 1
     ProjectListChildCode.style.transition = "ease-in-out 500ms";
     ProjectListChildCode.style.opacity = "0";
     ProjectListChildWeb.style.transition = "ease-in-out 500ms";
@@ -1512,10 +1656,22 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildDescription3.style.borderBottomLeftRadius = "4px";
     ProjectListChildDescription3.style.borderBottomRightRadius = "4px";
 
+    //Project 2
+    ProjectListChildCodeCV.style.transition = "ease-in-out 500ms";
+    ProjectListChildCodeCV.style.opacity = "0";
+    ProjectListChildWebCV.style.transition = "ease-in-out 500ms";
+    ProjectListChildWebCV.style.opacity = "0";
+
+    ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "16px";
+
+    ProjectListChildDescription3CV.style.borderBottomLeftRadius = "4px";
+    ProjectListChildDescription3CV.style.borderBottomRightRadius = "4px";
+
   }
 
   if(scroll > 200){
 
+    //Project 1
     ProjectList.style.backgroundColor = "#19af5fe9";
     ProjectList.style.transition = "ease-in-out 500ms";
 
@@ -1524,14 +1680,27 @@ document.getElementById('Project-List').onscroll = function (){
 
     ProjectListChildDescriptionTechnologiesSkills.style.bottom = "103px";
 
+    //Project 2
+
+    ProjectListChildDescriptionCV.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescriptionCV.style.opacity = "1";
+
+    ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "103px";
+    
+
   }
   else{
 
     ProjectList.style.backgroundColor = "#18d26fe9";
     ProjectList.style.transition = "ease-in-out 500ms";
 
+    //Project 1
     ProjectListChildDescription.style.transition = "ease-in-out 500ms";
     ProjectListChildDescription.style.opacity = "0";
+
+    //Project 2
+    ProjectListChildDescriptionCV.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescriptionCV.style.opacity = "0";
 
   }
 
