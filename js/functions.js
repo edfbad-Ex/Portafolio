@@ -22,6 +22,18 @@ window.addEventListener("load", function () {
   let ProjectListChildDesign2 = document.getElementById("Project-List-Child-Design2");
   let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
   let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
+  let ProjectListChildDescription3BarChild1 = document.getElementById("Project-List-Child-Description3-Bar-Child1")
+  let ProjectListChildDescription3BarChild2 = document.getElementById("Project-List-Child-Description3-Bar-Child2")
+  let ProjectListChildDescription3BarChild3 = document.getElementById("Project-List-Child-Description3-Bar-Child3")
+  let ProjectListChildDescription3BarChild4 = document.getElementById("Project-List-Child-Description3-Bar-Child4")
+  let ProjectListChildDescription3BarChild5 = document.getElementById("Project-List-Child-Description3-Bar-Child5")
+  let ProjectListChildDescription3BarChild6 = document.getElementById("Project-List-Child-Description3-Bar-Child6")
+  let ProjectListChildDescription3BarChild7 = document.getElementById("Project-List-Child-Description3-Bar-Child7")
+  let ProjectListChildDescription3BarChild8 = document.getElementById("Project-List-Child-Description3-Bar-Child8")
+  let ProjectListChildDescription3BarChild9 = document.getElementById("Project-List-Child-Description3-Bar-Child9")
+  let ProjectListChildDescription3BarChild10 = document.getElementById("Project-List-Child-Description3-Bar-Child10")
+  let ProjectListChildDescription3BarChild11 = document.getElementById("Project-List-Child-Description3-Bar-Child11")
+  let ProjectListChildDescription3BarChild12 = document.getElementById("Project-List-Child-Description3-Bar-Child12")
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
   let Down = document.getElementById("Down");
   let ProjectListChildDescriptionTechnologies = document.getElementById("Project-List-Child-Description-Technologies");
@@ -33,9 +45,18 @@ window.addEventListener("load", function () {
   let ProjectListChildCodeCV = document.getElementById("Project-List-Child-Code-CV");
   let ProjectListChildWebCV = document.getElementById("Project-List-Child-Web-CV");
   let ProjectListChildDescriptionCV = document.getElementById("Project-List-Child-Description-CV");
-  let ProjectListChildDescriptionTechnologiesCV = document.getElementById("Project-List-Child-Description-Technologies-CV");
   let TitleTechnologiesCV = document.getElementById("Title-Technologies-CV");
   let ProjectListChildDescriptionTechnologiesSkillsCV = document.getElementById("Project-List-Child-Description-Technologies-Skills-CV");
+
+  let ProjectListChildDesign5 = document.getElementById("Project-List-Child-Design5");
+  let ProjectListChildWebGeoAdmin = document.getElementById("Project-List-Child-Web-Geo-Admin");
+  let ProjectListChildDescriptionGeoAdmin = document.getElementById("Project-List-Child-Description-Geo-Admin");
+  let ProjectListChildDescriptionTechnologiesSkillsGeoAdmin = document.getElementById("Project-List-Child-Description-Technologies-Skills-Geo-Admin");
+
+  let ProjectListChildDesign6 = document.getElementById("Project-List-Child-Design6");
+  let ProjectListChildWebGeoUser = document.getElementById("Project-List-Child-Web-Geo-User");
+  let ProjectListChildDescriptionGeoUser = document.getElementById("Project-List-Child-Description-Geo-User");
+  let ProjectListChildDescriptionTechnologiesSkillsGeoUser = document.getElementById("Project-List-Child-Description-Technologies-Skills-Geo-User");
 
 
   //Media querys para ajuste de trasiciones y scale
@@ -47,10 +68,6 @@ window.addEventListener("load", function () {
   let mql6 = window.matchMedia("(min-width: 801px) and (max-width: 900px)");
   let mql7 = window.matchMedia("(min-width: 901px) and (max-width: 990px)");
   let mql8 = window.matchMedia("(min-width: 991px) and (max-width: 1400px)");
-
-  let ContainerNavBar = document.getElementById("Container-NavBar");
-  let child = document.getElementsByClassName("child");
-  let link = document.getElementsByClassName("link");
 
   let scrollPosition = window.pageYOffset;
 
@@ -230,6 +247,10 @@ window.addEventListener("load", function () {
       ProjectListChildDesign2.style.height = "100%";
       ProjectListChildDesign2.style.transform = "scale(1)";
 
+      ProjectListChildDescription3BarChild1.style.width = "50.1%";
+      ProjectListChildDescription3BarChild2.style.width = "47.3%";
+      ProjectListChildDescription3BarChild3.style.width = "2.6%";
+
       ProjectListChildCode.style.display = "flex";
       ProjectListChildWeb.style.display = "flex";
       ProjectListChildDescription.style.display = "flex";
@@ -261,6 +282,10 @@ window.addEventListener("load", function () {
       ProjectListChildDesign2.style.height = "auto";
       ProjectListChildDesign2.style.transform = "scale(1)";
 
+      ProjectListChildDescription3BarChild1.style.width = "0%";
+      ProjectListChildDescription3BarChild2.style.width = "0%";
+      ProjectListChildDescription3BarChild3.style.width = "0%";
+
       ProjectListChildCode.style.display = "none";
       ProjectListChildWeb.style.display = "none";
       ProjectListChildDescription.style.display = "none";
@@ -282,17 +307,17 @@ window.addEventListener("load", function () {
 
   ProjectListChild2.addEventListener("click", function () {
 
-      //Media querys para ajuste de trasiciones y scale
-      let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
-      let mql2 = window.matchMedia("(min-width: 401px) and (max-width: 500px)");
-      let mql3 = window.matchMedia("(min-width: 501px) and (max-width: 600px)");
-      let mql4 = window.matchMedia("(min-width: 601px) and (max-width: 700px)");
-      let mql5 = window.matchMedia("(min-width: 701px) and (max-width: 800px)");
-      let mql6 = window.matchMedia("(min-width: 801px) and (max-width: 900px)");
-      let mql7 = window.matchMedia("(min-width: 901px) and (max-width: 990px)");
-      let mql8 = window.matchMedia("(min-width: 991px) and (max-width: 1100px)");
-      let mql9 = window.matchMedia("(min-width: 1101px) and (max-width: 1200px)");
-      let mql10 = window.matchMedia("(min-width: 1201px) and (max-width: 1300px)");
+    //Media querys para ajuste de trasiciones y scale
+    let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
+    let mql2 = window.matchMedia("(min-width: 401px) and (max-width: 500px)");
+    let mql3 = window.matchMedia("(min-width: 501px) and (max-width: 600px)");
+    let mql4 = window.matchMedia("(min-width: 601px) and (max-width: 700px)");
+    let mql5 = window.matchMedia("(min-width: 701px) and (max-width: 800px)");
+    let mql6 = window.matchMedia("(min-width: 801px) and (max-width: 900px)");
+    let mql7 = window.matchMedia("(min-width: 901px) and (max-width: 990px)");
+    let mql8 = window.matchMedia("(min-width: 991px) and (max-width: 1100px)");
+    let mql9 = window.matchMedia("(min-width: 1101px) and (max-width: 1200px)");
+    let mql10 = window.matchMedia("(min-width: 1201px) and (max-width: 1300px)");
 
     
     let ProjectState = ProjectListChild3.style.flexGrow;
@@ -309,6 +334,10 @@ window.addEventListener("load", function () {
 
       ProjectListChildDesign4.style.height = "100%";
       ProjectListChildDesign4.style.transform = "scale(1)";
+
+      ProjectListChildDescription3BarChild4.style.width = "68.8%";
+      ProjectListChildDescription3BarChild5.style.width = "27.5%";
+      ProjectListChildDescription3BarChild6.style.width = "3.7%";
 
       ProjectListChildCodeCV.style.display = "flex";
       ProjectListChildWebCV.style.display = "flex";
@@ -409,6 +438,10 @@ window.addEventListener("load", function () {
       ProjectListChildDesign4.style.height = "auto";
       ProjectListChildDesign4.style.transform = "scale(1)";
 
+      ProjectListChildDescription3BarChild4.style.width = "0%";
+      ProjectListChildDescription3BarChild5.style.width = "0%";
+      ProjectListChildDescription3BarChild6.style.width = "0%";
+
       ProjectListChildCodeCV.style.display = "none";
       ProjectListChildWebCV.style.display = "none";
       ProjectListChildDescriptionCV.style.display = "none";
@@ -430,40 +463,163 @@ window.addEventListener("load", function () {
 
   ProjectListChild3.addEventListener("click", function () {
     
-    let ProjectState = ProjectListChild4.style.flexGrow;
+     //Media querys para ajuste de trasiciones y scale
+     let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
+     let mql2 = window.matchMedia("(min-width: 401px) and (max-width: 500px)");
+     let mql3 = window.matchMedia("(min-width: 501px) and (max-width: 600px)");
+     let mql4 = window.matchMedia("(min-width: 601px) and (max-width: 700px)");
+     let mql5 = window.matchMedia("(min-width: 701px) and (max-width: 800px)");
+     let mql6 = window.matchMedia("(min-width: 801px) and (max-width: 900px)");
+     let mql7 = window.matchMedia("(min-width: 901px) and (max-width: 990px)");
+     let mql8 = window.matchMedia("(min-width: 991px) and (max-width: 1100px)");
+     let mql9 = window.matchMedia("(min-width: 1101px) and (max-width: 1200px)");
+     let mql10 = window.matchMedia("(min-width: 1201px) and (max-width: 1300px)");
+ 
+     
+     let ProjectState = ProjectListChild4.style.flexGrow;
+ 
+     if(ProjectState != 0){
+ 
+       ProjectListChild1.style.flexGrow = "0";
+       ProjectListChild2.style.flexGrow = "0";
+       ProjectListChild3.style.flexGrow = "1";
+       ProjectListChild4.style.flexGrow = "0";
+       
+       ProjectListChildDesign5.style.height = "140vh";
+       ProjectListChildDesign5.style.transform = "scale(1)";
 
-    if(ProjectState != 0){
-
-      ProjectListChild1.style.flexGrow = "0";
-      ProjectListChild2.style.flexGrow = "0";
-      ProjectListChild3.style.flexGrow = "1";
-      ProjectListChild4.style.flexGrow = "0";
-
-      Down.style.display = "flex";
-
-      ProjectListChildDescriptionTechnologies.style.display = "flex";
-      
-      TitleTechnologies.innerHTML = "Project number 3 in progress ..";
-
-    }
-    else{
-
-      ProjectListChild1.style.flexGrow = "1";
-      ProjectListChild2.style.flexGrow = "1";
-      ProjectListChild3.style.flexGrow = "1";
-      ProjectListChild4.style.flexGrow = "1";
-
-      Down.style.display = "none";
-
-      ProjectListChildDescriptionTechnologies.style.display = "none";
-      
-      TitleTechnologies.innerHTML = "";
-
-    }
-
+       ProjectListChildDescription3BarChild7.style.width = "16.8%";
+       ProjectListChildDescription3BarChild8.style.width = "7.5%";
+       ProjectListChildDescription3BarChild9.style.width = "75.7%";
+ 
+       ProjectListChildWebGeoAdmin.style.display = "flex";
+       ProjectListChildDescriptionGeoAdmin.style.display = "flex";
+       ProjectListChildWebGeoAdmin.style.opacity = "0";
+       ProjectListChildDescriptionGeoAdmin.style.opacity = "0";
+ 
+       Down.style.display = "flex";
+       
+ 
+       ProjectListChildDescriptionTechnologies.style.display = "flex";
+       ProjectListChildDescriptionTechnologies.style.width = "100%";
+ 
+ 
+       TitleTechnologies.innerHTML = "Site created for the system administrator with PHP, JS and CSS. The database is MySql";
+       
+       ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.display = "flex";
+       ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "16px";
+ 
+       if(mql1.matches){
+ 
+        ProjectListChildDesign5.style.height = "219vh";
+ 
+       }
+ 
+       else if(mql2.matches){
+ 
+        ProjectListChildDesign5.style.height = "276vh"; 
+       }
+ 
+       else if(mql3.matches){
+ 
+        ProjectListChildDesign5.style.height = "333vh";
+ 
+       }
+ 
+       else if(mql4.matches){
+ 
+         ProjectListChildDesign5.style.height = "390vh";
+ 
+       }
+ 
+       else if(mql5.matches){
+ 
+         ProjectListChildDesign5.style.height = "448vh";
+ 
+       }
+       
+       else if(mql6.matches){
+ 
+         ProjectListChildDesign5.style.height = "506vh";
+ 
+       }
+ 
+       else if(mql7.matches){
+ 
+         ProjectListChildDesign5.style.height = "564vh";
+ 
+       }
+ 
+       else if(mql8.matches){
+ 
+         ProjectListChildDesign5.style.height = "622vh";
+ 
+       }
+ 
+       else if(mql9.matches){
+ 
+         ProjectListChildDesign5.style.height = "680vh";
+ 
+       }
+ 
+       else if(mql10.matches){
+ 
+         ProjectListChildDesign5.style.height = "728vh";
+ 
+       }
+ 
+       else{
+ 
+         ProjectListChildDesign5.style.height = "789vh";
+ 
+       }
+ 
+     }
+     else{
+ 
+       ProjectListChild1.style.flexGrow = "1";
+       ProjectListChild2.style.flexGrow = "1";
+       ProjectListChild3.style.flexGrow = "1";
+       ProjectListChild4.style.flexGrow = "1";
+ 
+       ProjectListChildDesign5.style.height = "auto";
+       ProjectListChildDesign5.style.transform = "scale(1)";
+       
+       ProjectListChildDescription3BarChild7.style.width = "0%";
+       ProjectListChildDescription3BarChild8.style.width = "0%";
+       ProjectListChildDescription3BarChild9.style.width = "0%";
+ 
+       ProjectListChildWebGeoAdmin.style.display = "none";
+       ProjectListChildDescriptionGeoAdmin.style.display = "none";
+       ProjectListChildWebGeoAdmin.style.opacity = "0";
+       ProjectListChildDescriptionGeoAdmin.style.opacity = "0";
+ 
+       Down.style.display = "none";
+ 
+       ProjectListChildDescriptionTechnologies.style.display = "none";
+       
+       TitleTechnologiesCV.innerHTML = "";
+ 
+       ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.display = "none";
+       
+     }
+ 
   });
 
   ProjectListChild4.addEventListener("click", function () {
+    
+    //Media querys para ajuste de trasiciones y scale
+    let mql1 = window.matchMedia("(min-width: 301px) and (max-width: 400px)");
+    let mql2 = window.matchMedia("(min-width: 401px) and (max-width: 500px)");
+    let mql3 = window.matchMedia("(min-width: 501px) and (max-width: 600px)");
+    let mql4 = window.matchMedia("(min-width: 601px) and (max-width: 700px)");
+    let mql5 = window.matchMedia("(min-width: 701px) and (max-width: 800px)");
+    let mql6 = window.matchMedia("(min-width: 801px) and (max-width: 900px)");
+    let mql7 = window.matchMedia("(min-width: 901px) and (max-width: 990px)");
+    let mql8 = window.matchMedia("(min-width: 991px) and (max-width: 1100px)");
+    let mql9 = window.matchMedia("(min-width: 1101px) and (max-width: 1200px)");
+    let mql10 = window.matchMedia("(min-width: 1201px) and (max-width: 1300px)");
+
     
     let ProjectState = ProjectListChild1.style.flexGrow;
 
@@ -473,12 +629,95 @@ window.addEventListener("load", function () {
       ProjectListChild2.style.flexGrow = "0";
       ProjectListChild3.style.flexGrow = "0";
       ProjectListChild4.style.flexGrow = "1";
+      
+      ProjectListChildDesign6.style.height = "140vh";
+      ProjectListChildDesign6.style.transform = "scale(1)";
+
+      ProjectListChildDescription3BarChild10.style.width = "22.8%";
+      ProjectListChildDescription3BarChild11.style.width = "7.5%";
+      ProjectListChildDescription3BarChild12.style.width = "69.7%";
+
+      ProjectListChildWebGeoUser.style.display = "flex";
+      ProjectListChildDescriptionGeoUser.style.display = "flex";
+      ProjectListChildWebGeoUser.style.opacity = "0";
+      ProjectListChildDescriptionGeoUser.style.opacity = "0";
 
       Down.style.display = "flex";
+      
 
       ProjectListChildDescriptionTechnologies.style.display = "flex";
+      ProjectListChildDescriptionTechnologies.style.width = "100%";
+
+
+      TitleTechnologies.innerHTML = "Site created for the system client with PHP, JS and CSS. The database is MySql";
       
-      TitleTechnologies.innerHTML = "Project number 4 in progress ..";
+      ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.display = "flex";
+      ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "16px";
+
+      if(mql1.matches){
+
+       ProjectListChildDesign6.style.height = "140vh";
+
+      }
+
+      else if(mql2.matches){
+
+       ProjectListChildDesign6.style.height = "170vh"; 
+      }
+
+      else if(mql3.matches){
+
+       ProjectListChildDesign6.style.height = "203vh";
+
+      }
+
+      else if(mql4.matches){
+
+        ProjectListChildDesign6.style.height = "233vh";
+
+      }
+
+      else if(mql5.matches){
+
+        ProjectListChildDesign6.style.height = "264vh";
+
+      }
+      
+      else if(mql6.matches){
+
+        ProjectListChildDesign6.style.height = "294vh";
+
+      }
+
+      else if(mql7.matches){
+
+        ProjectListChildDesign6.style.height = "324vh";
+
+      }
+
+      else if(mql8.matches){
+
+        ProjectListChildDesign6.style.height = "355vh";
+
+      }
+
+      else if(mql9.matches){
+
+        ProjectListChildDesign6.style.height = "385vh";
+
+      }
+
+      else if(mql10.matches){
+
+        ProjectListChildDesign6.style.height = "414vh";
+
+      }
+
+      else{
+
+        ProjectListChildDesign6.style.height = "443vh";
+
+      }
 
     }
     else{
@@ -488,18 +727,34 @@ window.addEventListener("load", function () {
       ProjectListChild3.style.flexGrow = "1";
       ProjectListChild4.style.flexGrow = "1";
 
+      ProjectListChildDesign6.style.height = "auto";
+      ProjectListChildDesign6.style.transform = "scale(1)";
+      
+      ProjectListChildDescription3BarChild10.style.width = "0%";
+      ProjectListChildDescription3BarChild11.style.width = "0%";
+      ProjectListChildDescription3BarChild12.style.width = "0%";
+
+      ProjectListChildWebGeoUser.style.display = "none";
+      ProjectListChildDescriptionGeoUser.style.display = "none";
+      ProjectListChildWebGeoUser.style.opacity = "0";
+      ProjectListChildDescriptionGeoUser.style.opacity = "0";
+
       Down.style.display = "none";
 
       ProjectListChildDescriptionTechnologies.style.display = "none";
       
-      TitleTechnologies.innerHTML = "";
+      TitleTechnologiesCV.innerHTML = "";
 
+      ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.display = "none";
+      
     }
 
-  });
+  });  
 
 
 });
+
+
 
 window.addEventListener("scroll", function () {
   let SkillsBar = document.getElementsByClassName("SkillsBar");
@@ -523,7 +778,7 @@ window.addEventListener("scroll", function () {
   let mql10 = window.matchMedia("(min-width: 1301px)");
 
   let scrollPosition = window.pageYOffset;
-  console.log(scrollPosition);
+  //console.log(scrollPosition);
 
   if (scrollPosition > 600) {
     var i;
@@ -1609,16 +1864,28 @@ document.getElementById('Project-List').onscroll = function (){
   let ProjectListChildDescriptionCV = document.getElementById("Project-List-Child-Description-CV");
   let ProjectListChildDescriptionTechnologiesSkillsCV = document.getElementById("Project-List-Child-Description-Technologies-Skills-CV");
   let ProjectListChildDescription3CV = document.getElementById("Project-List-Child-Description3-CV");
+  
+  //Project 3
+  let ProjectListChildWebGeoAdmin = document.getElementById("Project-List-Child-Web-Geo-Admin");
+  let ProjectListChildDescriptionGeoAdmin = document.getElementById("Project-List-Child-Description-Geo-Admin");
+  let ProjectListChildDescriptionTechnologiesSkillsGeoAdmin = document.getElementById("Project-List-Child-Description-Technologies-Skills-Geo-Admin");
+  let ProjectListChildDescription3GeoAdmin = document.getElementById("Project-List-Child-Description3-Geo-Admin");
+
+  //Project 4
+  let ProjectListChildWebGeoUser = document.getElementById("Project-List-Child-Web-Geo-User");
+  let ProjectListChildDescriptionGeoUser = document.getElementById("Project-List-Child-Description-Geo-User");
+  let ProjectListChildDescriptionTechnologiesSkillsGeoUser = document.getElementById("Project-List-Child-Description-Technologies-Skills-Geo-User");
+  let ProjectListChildDescription3GeoUser = document.getElementById("Project-List-Child-Description3-Geo-User");
 
   // Obtenemos la posicion del scroll en pantalla
   let scroll = ProjectList.scrollTop;
 
   // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
-  console.log("Scroll Projects; ", scroll);
+  //console.log("Scroll Projects; ", scroll);
 
   if(scroll > 70){
 
-    console.log("270");
+    //console.log("270");
 
     //Project 1
     ProjectListChildCode.style.transition = "ease-in-out 500ms";
@@ -1641,6 +1908,24 @@ document.getElementById('Project-List').onscroll = function (){
 
     ProjectListChildDescription3CV.style.borderBottomLeftRadius = "0px";
     ProjectListChildDescription3CV.style.borderBottomRightRadius = "0px";
+
+    //Project3
+    ProjectListChildWebGeoAdmin.style.transition = "ease-in-out 500ms";
+    ProjectListChildWebGeoAdmin.style.opacity = "1";
+
+    ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "58px";
+
+    ProjectListChildDescription3GeoAdmin.style.borderBottomLeftRadius = "0px";
+    ProjectListChildDescription3GeoAdmin.style.borderBottomRightRadius = "0px";
+
+    //Project4
+    ProjectListChildWebGeoUser.style.transition = "ease-in-out 500ms";
+    ProjectListChildWebGeoUser.style.opacity = "1";
+
+    ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "58px";
+
+    ProjectListChildDescription3GeoUser.style.borderBottomLeftRadius = "0px";
+    ProjectListChildDescription3GeoUser.style.borderBottomRightRadius = "0px";
 
   }
   else{
@@ -1667,6 +1952,24 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildDescription3CV.style.borderBottomLeftRadius = "4px";
     ProjectListChildDescription3CV.style.borderBottomRightRadius = "4px";
 
+    //Project3
+    ProjectListChildWebGeoAdmin.style.transition = "ease-in-out 500ms";
+    ProjectListChildWebGeoAdmin.style.opacity = "0";
+
+    ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "16px";
+
+    ProjectListChildDescription3GeoAdmin.style.borderBottomLeftRadius = "4px";
+    ProjectListChildDescription3GeoAdmin.style.borderBottomRightRadius = "4px";
+
+    //Project4
+    ProjectListChildWebGeoUser.style.transition = "ease-in-out 500ms";
+    ProjectListChildWebGeoUser.style.opacity = "0";
+
+    ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "16px";
+
+    ProjectListChildDescription3GeoUser.style.borderBottomLeftRadius = "4px";
+    ProjectListChildDescription3GeoUser.style.borderBottomRightRadius = "4px";
+
   }
 
   if(scroll > 200){
@@ -1681,12 +1984,21 @@ document.getElementById('Project-List').onscroll = function (){
     ProjectListChildDescriptionTechnologiesSkills.style.bottom = "103px";
 
     //Project 2
-
     ProjectListChildDescriptionCV.style.transition = "ease-in-out 500ms";
     ProjectListChildDescriptionCV.style.opacity = "1";
-
     ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "103px";
+
+    //Project 3
+    ProjectListChildDescriptionGeoAdmin.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescriptionGeoAdmin.style.opacity = "1";
+
+    ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "103px";
     
+    //Project 4
+    ProjectListChildDescriptionGeoUser.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescriptionGeoUser.style.opacity = "1";
+
+    ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "103px";
 
   }
   else{
@@ -1701,6 +2013,14 @@ document.getElementById('Project-List').onscroll = function (){
     //Project 2
     ProjectListChildDescriptionCV.style.transition = "ease-in-out 500ms";
     ProjectListChildDescriptionCV.style.opacity = "0";
+
+    //Project 3
+    ProjectListChildDescriptionGeoAdmin.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescriptionGeoAdmin.style.opacity = "0";
+
+    //Project 4
+    ProjectListChildDescriptionGeoUser.style.transition = "ease-in-out 500ms";
+    ProjectListChildDescriptionGeoUser.style.opacity = "0";
 
   }
 
