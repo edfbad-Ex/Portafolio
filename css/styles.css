@@ -701,63 +701,16 @@ body {
 
 .FacesT {
   position: absolute;
-  margin-top: 0px;
-  margin-left: 30%;
-  background: url("../img/faceT.png") top right no-repeat;
-  background-size: cover;
-  transform: scale(0.8);
-  width: 350px;
-  height: 200px;
+  width: 230px;
+  height: 50vh;
+  margin-top: 50px;
+  margin-left: 0%;
+  left: 30px;
+  background: url("../img/faceL.png") center center no-repeat;
+  background-size: 100%;
   animation: FacesIntermitente 7s infinite;
   transition: ease-in-out;
-}
-
-.FacesR {
-  position: absolute;
-  margin-top: 600px;
-  right: 10%;
-  background: url("../img/faceR.png") top right no-repeat;
-  transform: scale(1.2);
-  width: 350px;
-  height: 400px;
-  animation: FacesIntermitenteR 3s infinite;
-  transition: ease-in-out;
-}
-
-.FacesL {
-  position: absolute;
-  margin-top: 500px;
-  left: 0%;
-  background: url("../img/faceL.png") top right no-repeat;
-  transform: scale(1.2);
-  width: 350px;
-  height: 400px;
-  animation: FacesIntermitenteL 4s infinite;
-  transition: ease-in-out;
-}
-
-.FacesT1 {
-  position: absolute;
-  margin-top: 980px;
-  right: 10%;
-  background: url("../img/faceT.png") top right no-repeat;
-  transform: scale(1.2);
-  width: 350px;
-  height: 400px;
-  animation: FacesIntermitenteT 7s infinite;
-  transition: ease-in-out;
-}
-
-.FacesB {
-  position: absolute;
-  margin-top: 1100px;
-  left: 10%;
-  background: url("../img/faceB.png") top right no-repeat;
-  transform: scale(1.2);
-  width: 350px;
-  height: 400px;
-  animation: FacesIntermitenteB 7s infinite;
-  transition: ease-in-out;
+  transform: rotate(15deg);
 }
 
 .Container-NavBar {
@@ -1713,87 +1666,6 @@ svg {
     opacity: 0.3;
     /**    margin-left: 71%;*/
     transform: rotate(10deg);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes FacesIntermitenteR {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-    transform: scale(0.6);
-
-    /*    margin-top: 145px;*/
-  }
-  50% {
-    opacity: 1;
-    transform: scale(0.8);
-    /**    margin-left: 71%;*/
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes FacesIntermitenteL {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-    transform: scale(0.6);
-
-    /*    margin-top: 145px;*/
-  }
-  50% {
-    opacity: 1;
-    transform: scale(0.8);
-    /**    margin-left: 71%;*/
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes FacesIntermitenteT {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-    transform: scale(0.6);
-
-    /*    margin-top: 145px;*/
-  }
-  50% {
-    opacity: 0;
-    transform: scale(0.8);
-
-    /**    margin-left: 71%;*/
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes FacesIntermitenteB {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-    transform: scale(0.6);
-
-    /*    margin-top: 145px;*/
-  }
-  50% {
-    opacity: 0;
-    transform: scale(0.8);
-    /**    margin-left: 71%;*/
   }
   100% {
     opacity: 0;
