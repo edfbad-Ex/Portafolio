@@ -16,8 +16,7 @@ body {
   overflow-y: scroll;
 }
 
-.Container-Projects{
-
+.Container-Projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,11 +28,9 @@ body {
   z-index: 5;
   transition: ease-out 700ms;
   left: -0.4%;
-  
 }
 
-#Projects{
-
+#Projects {
   width: 90.4%;
   border: none;
   border-radius: 4px;
@@ -46,40 +43,31 @@ body {
   font-family: "Zen Dots", cursive;
   outline: none;
   margin: 0px;
-
 }
 
-#Projects ul{
-
+#Projects ul {
   padding: 0%;
   margin-block-start: 0%;
   margin-block-end: 0%;
   padding-inline-start: 0px;
-
 }
 
-#Projects:hover{
-
+#Projects:hover {
   transform: translate(1px, -1px);
   cursor: pointer;
   background-color: rgba(24, 210, 111);
-
 }
 
 #Projects:focus {
-
   background-color: rgba(24, 210, 111);
   outline: none;
 }
 
-.Container-Projects:focus{
-  
+.Container-Projects:focus {
   outline: none;
-
 }
 
-.Project-List{
-
+.Project-List {
   display: flex;
   flex-direction: column;
   background-color: #18d26fe9;
@@ -89,51 +77,41 @@ body {
   border-radius: 4px;
   overflow-y: scroll;
   padding: 0px;
-
 }
 
-#Project-List-Child1{
-
+#Project-List-Child1 {
   flex-grow: 1;
   border: 1px solid white;
   transition: ease-in-out 500ms;
   display: flex;
   flex-direction: row;
-
 }
 
-#Project-List-Child2{
-  
+#Project-List-Child2 {
   flex-grow: 1;
   border: 1px solid white;
   transition: ease-in-out 500ms;
   display: flex;
   flex-direction: row;
-
 }
 
-#Project-List-Child3{
-
+#Project-List-Child3 {
   flex-grow: 1;
   border: 1px solid white;
   transition: ease-in-out 500ms;
   display: flex;
   flex-direction: row;
-
 }
 
-#Project-List-Child4{
-
+#Project-List-Child4 {
   flex-grow: 1;
   border: 1px solid white;
   transition: ease-in-out 500ms;
   display: flex;
   flex-direction: row;
-
 }
 
-.Project-List-Child-Design:nth-child(1){
-
+.Project-List-Child-Design:nth-child(1) {
   background: url("../img/mobile-design.jpg") top center no-repeat;
   background-size: 100%;
   width: 100%;
@@ -144,11 +122,9 @@ body {
   transition-timing-function: linear;
   transition-duration: 200ms;
   outline: none;
-
 }
 
-.Project-List-Child-Design:nth-child(2){
-
+.Project-List-Child-Design:nth-child(2) {
   background: url("../img/desktop-design.jpg") top center no-repeat;
   background-size: 100%;
   width: 100%;
@@ -159,19 +135,14 @@ body {
   transition-timing-function: linear;
   transition-duration: 200ms;
   outline: none;
-
 }
 
 .Project-List-Child-Design:nth-child(2):focus,
-.Project-List-Child-Design:nth-child(2):focus{
-
+.Project-List-Child-Design:nth-child(2):focus {
   outline: none;
-
 }
 
-
-.Project-List-Child-Code{
-
+.Project-List-Child-Code {
   position: fixed;
   bottom: 16px;
   left: 9.7%;
@@ -186,11 +157,9 @@ body {
   border-bottom: 2px solid white;
   border-bottom-left-radius: 4px;
   outline: none;
-
 }
 
-.Project-List-Child-Web{
-
+.Project-List-Child-Web {
   position: fixed;
   bottom: 16px;
   right: 10.5%;
@@ -205,11 +174,9 @@ body {
   border-bottom: 2px solid white;
   border-bottom-right-radius: 4px;
   outline: none;
-
 }
 
-.Down{
-
+.Down {
   position: fixed;
   display: none;
   width: auto;
@@ -222,63 +189,45 @@ body {
   transition-duration: 300ms;
   stroke: white;
   z-index: 1;
-
 }
 
 @keyframes down {
-
-  0%{
-
+  0% {
     bottom: 55%;
     stroke: white;
-
   }
-  50%{
-
+  50% {
     bottom: 50%;
     stroke: #068a43;
-
   }
-  100%{
-
+  100% {
     bottom: 55%;
-
   }
-
 }
 
-.Project-List-Child-Code > a{
-
+.Project-List-Child-Code > a {
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   color: white;
   transition: ease-in-out 250ms;
-
 }
 
-.Project-List-Child-Web > a{
-
+.Project-List-Child-Web > a {
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   color: white;
   transition: ease-in-out 250ms;
-
 }
 
-.Project-List-Child-Code > a:hover{
-
+.Project-List-Child-Code > a:hover {
   transform: translate(0px, -2px);
-
 }
 
-.Project-List-Child-Web > a:hover{
-
+.Project-List-Child-Web > a:hover {
   transform: translate(0px, -2px);
-
 }
 
-.Project-List-Child-Description{
-
+.Project-List-Child-Description {
   position: fixed;
   bottom: 59px;
   width: 79.9%;
@@ -288,25 +237,18 @@ body {
   transform: scale(1);
   text-align: center;
   flex-direction: column;
-  border: none;  
+  border: none;
   color: white;
   font-size: 14px;
-
 }
 
-.Project-List-Child-Description1 > p{
-
+.Project-List-Child-Description1 > p {
   width: 100%;
-
 }
 
-
-
-
-.Project-List-Child-Description-Technologies{
-
+.Project-List-Child-Description-Technologies {
   position: absolute;
-  top:  45px;
+  top: 45px;
   width: 100%;
   left: 0px;
   display: none;
@@ -316,17 +258,15 @@ body {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  border: none;  
+  border: none;
   color: white;
   font-size: 14px;
   height: auto;
   z-index: 1;
-
 }
 
-.Project-List-Child-Description2{
-
-  background-color: rgba(24, 210, 111, 0.960);
+.Project-List-Child-Description2 {
+  background-color: rgba(24, 210, 111, 0.96);
   width: 80%;
   height: 15%;
   display: flex;
@@ -334,11 +274,9 @@ body {
   align-items: center;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-
 }
 
-.Project-List-Child-Description-Technologies-Skills{
-
+.Project-List-Child-Description-Technologies-Skills {
   position: absolute;
   width: 100%;
   left: 0px;
@@ -348,16 +286,13 @@ body {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  border: none;  
+  border: none;
   color: white;
   font-size: 15px;
   height: auto;
-
 }
 
-
-.Project-List-Child-Description3{
-
+.Project-List-Child-Description3 {
   width: 79.9%;
   margin-left: 1px;
   display: flex;
@@ -368,17 +303,13 @@ body {
   border-bottom: 2px solid white;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-
 }
 
-.Span-Languages{
-
+.Span-Languages {
   margin-top: 10px;
-
 }
 
-.Project-List-Child-Description3-Bar{
-
+.Project-List-Child-Description3-Bar {
   width: 96%;
   height: 15px;
   display: flex;
@@ -386,130 +317,102 @@ body {
   border-radius: 20px;
   border: 1px solid white;
   margin-top: 10px;
-
 }
 
-.Project-List-Child-Description3-Bar-Child:nth-child(1){
-
+.Project-List-Child-Description3-Bar-Child:nth-child(1) {
   width: 0%;
   height: 100%;
   background-color: #f1e05a;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   border-right: 1px solid white;
-
 }
 
-.Project-List-Child-Description3-Bar-Child:nth-child(2){
-
+.Project-List-Child-Description3-Bar-Child:nth-child(2) {
   width: 0%;
   height: 100%;
   background-color: #563d7c;
   border-right: 1px solid white;
-
 }
 
-.Project-List-Child-Description3-Bar-Child:nth-child(3){
-
+.Project-List-Child-Description3-Bar-Child:nth-child(3) {
   width: 0%;
-  height: 100%; 
+  height: 100%;
   background-color: #e34c26;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-
 }
 
-.Project-List-Child-Description3-Bar-Description{
-
+.Project-List-Child-Description3-Bar-Description {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;  
+  align-items: center;
   margin-top: 10px;
-
 }
 
-.Project-List-Child-Description3-Bar-Description-Child:nth-child(1){
-
+.Project-List-Child-Description3-Bar-Description-Child:nth-child(1) {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.Project-List-Child-Description3-Bar-Description-Child:nth-child(2){
-
+.Project-List-Child-Description3-Bar-Description-Child:nth-child(2) {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.Project-List-Child-Description3-Bar-Description-Child:nth-child(3){
-
+.Project-List-Child-Description3-Bar-Description-Child:nth-child(3) {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.Skills-Circle1{
-
+.Skills-Circle1 {
   background-color: #f1e05a;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: 1px solid white;
   margin-bottom: 10px;
-
 }
 
-.Skills-Circle2{
-
+.Skills-Circle2 {
   background-color: #563d7c;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: 1px solid white;
   margin-bottom: 10px;
-
 }
 
-.Skills-Circle3{
-
+.Skills-Circle3 {
   background-color: #e34c26;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: 1px solid white;
   margin-bottom: 10px;
-
 }
 
-.Skills-Description-Percentage{
-
+.Skills-Description-Percentage {
   font-size: 12px;
   color: #000000;
   letter-spacing: 1.5px;
   margin-bottom: 5px;
-
 }
 
-.Skills-Description{
-
+.Skills-Description {
   font-size: 13px;
   margin-bottom: 10px;
-
 }
 
-@media (min-width: 0px) and (max-width: 900.99px){
-
-  
-  .Project-List-Child-Code{
-
+@media (min-width: 0px) and (max-width: 900.99px) {
+  .Project-List-Child-Code {
     position: fixed;
     bottom: 16px;
     left: 9.7%;
@@ -524,11 +427,9 @@ body {
     border-bottom: 2px solid white;
     border-bottom-left-radius: 4px;
     outline: none;
-  
   }
-  
-  .Project-List-Child-Web{
-  
+
+  .Project-List-Child-Web {
     position: fixed;
     bottom: 16px;
     right: 10.6%;
@@ -543,11 +444,9 @@ body {
     border-bottom: 2px solid white;
     border-bottom-right-radius: 4px;
     outline: none;
-  
   }
 
-  .Project-List-Child-Description{
-
+  .Project-List-Child-Description {
     position: fixed;
     bottom: 59px;
     width: 79.5%;
@@ -557,14 +456,12 @@ body {
     transform: scale(1);
     text-align: center;
     flex-direction: column;
-    border: none;  
+    border: none;
     color: white;
     font-size: 14px;
-  
   }
 
-  .Project-List-Child-DescriptionCV{
-
+  .Project-List-Child-DescriptionCV {
     position: fixed;
     bottom: 59px;
     width: 79.5%;
@@ -574,14 +471,12 @@ body {
     transform: scale(1);
     text-align: center;
     flex-direction: column;
-    border: none;  
+    border: none;
     color: white;
     font-size: 14px;
-  
   }
 
-  .Project-List-Child-Description3{
-
+  .Project-List-Child-Description3 {
     width: 79.5%;
     margin-left: 0px;
     display: flex;
@@ -589,15 +484,12 @@ body {
     align-items: center;
     background: linear-gradient(to bottom, #13aa5ade, #18d26fe7);
     border-top: 2px solid white;
-  
   }
-
 }
 
 /*Project 2*/
 
-.Project-List-Child-Design-CV:nth-child(1){
-
+.Project-List-Child-Design-CV:nth-child(1) {
   background: url("../img/MobileCv.png") top center no-repeat;
   background-size: 100%;
   width: 100%;
@@ -608,11 +500,9 @@ body {
   transition-timing-function: linear;
   transition-duration: 200ms;
   outline: none;
-
 }
 
-.Project-List-Child-Design-CV:nth-child(2){
-
+.Project-List-Child-Design-CV:nth-child(2) {
   background: url("../img/DesktopCV.png") top center no-repeat;
   background-size: 100%;
   width: 100%;
@@ -623,18 +513,14 @@ body {
   transition-timing-function: linear;
   transition-duration: 200ms;
   outline: none;
-
 }
 
 .Project-List-Child-Design-CV:nth-child(1):focus,
-.Project-List-Child-Design-CV:nth-child(2):focus{
-
+.Project-List-Child-Design-CV:nth-child(2):focus {
   outline: none;
-
 }
 
-.Project-List-Child-DescriptionCV{
-
+.Project-List-Child-DescriptionCV {
   position: fixed;
   bottom: 59px;
   width: 79.9%;
@@ -644,42 +530,33 @@ body {
   transform: scale(1);
   text-align: center;
   flex-direction: column;
-  border: none;  
+  border: none;
   color: white;
   font-size: 14px;
-
 }
 
-
-.Project-List-Child-DescriptionCV2{
-
+.Project-List-Child-DescriptionCV2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 45px;
-
 }
 
-.Project-List-Child-DescriptionCV2 > a{
-
+.Project-List-Child-DescriptionCV2 > a {
   flex-grow: 1;
   margin-top: 13px;
   color: white;
   text-decoration: none;
   transition: ease-in-out 250ms;
-
 }
 
-.Project-List-Child-DescriptionCV2 > a:hover{
-
+.Project-List-Child-DescriptionCV2 > a:hover {
   transform: translate(0px, -2px);
-
 }
 
 /*Project 3*/
 
-.Project-List-Child-Design-Geo-Admin{
-
+.Project-List-Child-Design-Geo-Admin {
   background: url("../img/Design-Geo-Admin.png") top center no-repeat;
   background-size: 100%;
   width: 100%;
@@ -690,23 +567,17 @@ body {
   transition-timing-function: linear;
   transition-duration: 200ms;
   outline: none;
-
 }
 
-.Project-List-Child-Design-Geo-Admin{
-
+.Project-List-Child-Design-Geo-Admin {
   outline: none;
-
 }
 
-#Project-List-Child-Web-Geo-Admin{
-
+#Project-List-Child-Web-Geo-Admin {
   width: 79.7%;
-
 }
 
-.Project-List-Child-Description-Geo-Admin{
-
+.Project-List-Child-Description-Geo-Admin {
   position: fixed;
   bottom: 59px;
   width: 79.9%;
@@ -716,43 +587,34 @@ body {
   transform: scale(1);
   text-align: center;
   flex-direction: column;
-  border: none;  
+  border: none;
   color: white;
   font-size: 14px;
-
 }
 
-
-.Project-List-Child-Description-Geo-Admin2{
-
+.Project-List-Child-Description-Geo-Admin2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 45px;
-
 }
 
-.Project-List-Child-Geo-Admin2 > p{
-
+.Project-List-Child-Geo-Admin2 > p {
   flex-grow: 1;
   margin-top: 13px;
   color: white;
   text-decoration: none;
   transition: ease-in-out 250ms;
   cursor: pointer;
-
 }
 
-.Project-List-Child-Geo-Admin2 > p:hover{
-
+.Project-List-Child-Geo-Admin2 > p:hover {
   transform: translate(0px, -2px);
-
 }
 
 /*Project 4*/
 
-.Project-List-Child-Design-Geo-User{
-
+.Project-List-Child-Design-Geo-User {
   background: url("../img/Design-Geo-User.png") top center no-repeat;
   background-size: 100%;
   width: 100%;
@@ -763,23 +625,17 @@ body {
   transition-timing-function: linear;
   transition-duration: 200ms;
   outline: none;
-
 }
 
-.Project-List-Child-Design-Geo-User{
-
+.Project-List-Child-Design-Geo-User {
   outline: none;
-
 }
 
-#Project-List-Child-Web-Geo-User{
-
+#Project-List-Child-Web-Geo-User {
   width: 79.7%;
-
 }
 
-.Project-List-Child-Description-Geo-User{
-
+.Project-List-Child-Description-Geo-User {
   position: fixed;
   bottom: 59px;
   width: 79.9%;
@@ -789,37 +645,29 @@ body {
   transform: scale(1);
   text-align: center;
   flex-direction: column;
-  border: none;  
+  border: none;
   color: white;
   font-size: 14px;
-
 }
 
-
-.Project-List-Child-Description-Geo-User2{
-
+.Project-List-Child-Description-Geo-User2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 45px;
-
 }
 
-.Project-List-Child-Geo-User2 > p{
-
+.Project-List-Child-Geo-User2 > p {
   flex-grow: 1;
   margin-top: 13px;
   color: white;
   text-decoration: none;
   transition: ease-in-out 250ms;
   cursor: pointer;
-
 }
 
-.Project-List-Child-Geo-User2 > p:hover{
-
+.Project-List-Child-Geo-User2 > p:hover {
   transform: translate(0px, -2px);
-
 }
 
 /*End Projects*/
@@ -932,10 +780,8 @@ body {
   outline: none;
 }
 
-.NavHome:focus{
-
+.NavHome:focus {
   outline: none;
-
 }
 
 .point1 {
@@ -981,7 +827,6 @@ ul {
   margin-right: 0px;
   list-style: none;
 }
-
 
 .NavBar .child .link {
   text-decoration: none;
@@ -1343,7 +1188,7 @@ ul {
 .Container-services {
   opacity: 1;
   width: 100%;
-  height: 918px;
+  height: 1040px;
   border-radius: 2px;
   margin-top: 0px;
   border-left: 2px solid #18d26e;
@@ -1357,7 +1202,6 @@ ul {
   display: flex;
   flex-direction: column;
   width: 96.8%;
-  height: 790px;
   margin: 20px;
 }
 
@@ -1377,6 +1221,13 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 991px) {
+  .servicesDate-child {
+    width: 33.33%;
+    height: 420px;
+  }
 }
 
 .servicesDate-child:hover {
@@ -1634,9 +1485,7 @@ textarea::placeholder {
 .icofont-facebook:focus,
 .icofont-instagram:focus,
 .icofont-skype:focus {
-
   outline: none;
-
 }
 
 .contactDates {
@@ -1722,10 +1571,8 @@ textarea::placeholder {
   outline: none;
 }
 
-.message-child:nth-child(3):focus{
-
+.message-child:nth-child(3):focus {
   outline: none;
-
 }
 
 .message-child:nth-child(3):hover {
@@ -1961,7 +1808,5 @@ svg {
 }
 
 .childBars:focus {
-
   outline: none;
-
 }

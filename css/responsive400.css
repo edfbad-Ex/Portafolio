@@ -306,8 +306,7 @@
     padding: 0% 25% 0% 25%;
     position: absolute;
     text-align: center;
-}
-
+  }
 
   .aboutP1 {
     position: absolute;
@@ -344,7 +343,7 @@
   }
 
   .ListDates-child {
-      margin-top: -35px;
+    margin-top: -35px;
   }
 
   .ListDates-child:nth-child(1) {
@@ -461,7 +460,7 @@
   /*Section Services*/
 
   .Container-services {
-    height: 1885px;
+    height: 2210px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -472,7 +471,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 790px;
     margin: 120px 0px 0px 0px;
   }
 
@@ -485,6 +483,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 320px;
   }
 
   .serviceDate-child1 {
@@ -566,13 +565,13 @@
   }
 
   .message {
-    margin:10px 40px 20px 40px;
+    margin: 10px 40px 20px 40px;
   }
 
   .message-child:nth-child(1) {
     margin: 0px 5px 10px 5px;
   }
-  
+
   .message-child:nth-child(2) {
     margin: 10px 5px 10px 5px;
   }
