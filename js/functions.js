@@ -1749,7 +1749,7 @@ function fixedNav2() {
 
   else if (mql6.matches) {
     window.scroll({
-      top: 1920,
+      top: 1930,
       left: 0,
       behavior: "smooth",
     });
@@ -1823,7 +1823,7 @@ function fixedNav3() {
 
   else if (mql6.matches) {
     window.scroll({
-      top: 3145,
+      top: 3155,
       left: 0,
       behavior: "smooth",
     });
