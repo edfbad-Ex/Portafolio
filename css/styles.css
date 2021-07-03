@@ -875,7 +875,7 @@ ul {
   transform: translate(-1px, 1px);
 }
 
-.twitter1 {
+.github1 {
   margin-top: 10px;
   text-decoration: none;
   flex-grow: 1;
@@ -893,13 +893,13 @@ ul {
   flex-grow: 1;
 }
 
-.google-plus1 {
+.messenger1 {
   margin-top: 10px;
   text-decoration: none;
   flex-grow: 1;
 }
 
-.twitter1 > .icofont-twitter:hover {
+.github1 > .fa-github:hover {
   color: white !important;
 }
 
@@ -911,7 +911,7 @@ ul {
   color: white !important;
 }
 
-.google-plus1 > .icofont-skype:hover {
+.messenger1 > .icofont-facebook-messenger:hover {
   color: white !important;
 }
 
@@ -1313,12 +1313,14 @@ input::placeholder {
   font-size: 1.1em;
   color: rgba(255, 255, 255, 0.438);
   font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea::placeholder {
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: rgba(255, 255, 255, 0.438);
   font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 .your {
@@ -1338,6 +1340,7 @@ textarea::placeholder {
   padding: 10px 10px 10px 10px;
   transition: ease-in-out 350ms;
   border-radius: 2px;
+  font-size: 13.5px;
 }
 
 .your-child:hover {
@@ -1377,9 +1380,10 @@ textarea::placeholder {
   display: flex;
   flex-direction: row;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
-.twitter2 {
+.github2 {
   text-decoration: none;
   flex-grow: 1;
 }
@@ -1394,12 +1398,12 @@ textarea::placeholder {
   flex-grow: 1;
 }
 
-.google-plus2 {
+.messenger2 {
   text-decoration: none;
   flex-grow: 1;
 }
 
-.icofont-twitter {
+.fa-github {
   color: white;
   font-size: 20px;
   transition: ease-in-out 310ms;
@@ -1420,24 +1424,24 @@ textarea::placeholder {
   outline: none;
 }
 
-.icofont-skype {
+.icofont-facebook-messenger {
   color: white;
   font-size: 20px;
   transition: ease-in-out 310ms;
   outline: none;
 }
 
-.icofont-twitter:hover,
+.fa-github:hover,
 .icofont-facebook:hover,
 .icofont-instagram:hover,
-.icofont-skype:hover {
+.icofont-facebook-messenger:hover {
   color: #18d26e;
 }
 
-.icofont-twitter:focus,
+.fa-github:focus,
 .icofont-facebook:focus,
 .icofont-instagram:focus,
-.icofont-skype:focus {
+.icofont-facebook-messenger:focus {
   outline: none;
 }
 
@@ -1465,7 +1469,6 @@ textarea::placeholder {
   align-items: center;
   margin: 0px 40px 20px 40px;
   height: 300px;
-  font-size: 20px;
 }
 
 .message-child:nth-child(1) {
@@ -1478,6 +1481,7 @@ textarea::placeholder {
   padding: 10px 10px 10px 10px;
   transition: ease-in-out 350ms;
   border-radius: 2px;
+  font-size: 13.5px;
 }
 
 .message-child:nth-child(2) {
@@ -1491,6 +1495,7 @@ textarea::placeholder {
   resize: none;
   transition: ease-in-out 350ms;
   border-radius: 2px;
+  font-size: 13.5px;
 }
 
 .message-child:nth-child(1):hover {
@@ -1532,6 +1537,7 @@ textarea::placeholder {
   cursor: pointer;
   background-color: #18d26e;
 }
+
 
 svg {
   stroke: #18d26f;
