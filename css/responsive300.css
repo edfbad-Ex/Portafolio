@@ -274,7 +274,7 @@
     margin-top: 420px;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .containerImg img {
@@ -293,11 +293,11 @@
     width: 70%;
     justify-content: center;
     margin-left: 0px;
-    margin-top: 320px;
+    margin-top: 340px;
   }
 
   .ListDates-child {
-    margin-top: -35px;
+    margin-top: -25px;
   }
 
   .ListDates-child:nth-child(1) {
@@ -339,7 +339,7 @@
   .Skills {
     position: absolute;
     display: flex;
-    margin-top: 910px;
+    margin-top: 930px;
     width: 100%;
     height: auto;
     align-content: center;
@@ -409,7 +409,7 @@
   .Interests {
     position: absolute;
     display: flex;
-    margin-top: 1640px;
+    margin-top: 1650px;
     width: 100%;
     height: auto;
     align-content: center;
