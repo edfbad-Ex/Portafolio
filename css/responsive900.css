@@ -425,7 +425,7 @@
   /*Section Services*/
 
   .Container-services {
-    height: 1040px;
+    height: 1120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -444,7 +444,7 @@
     flex-direction: column;
     align-items: center;
     width: 33.33%;
-    height: 420px;
+    height: 460px;
   }
 
   .servicesDate-child:nth-child(1) {
