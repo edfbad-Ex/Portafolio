@@ -181,7 +181,7 @@ body {
   display: none;
   width: auto;
   transform: rotate(180deg);
-  right: 27%;
+  right: 49.5%;
   bottom: 45%;
   animation: down 2s infinite;
   transition-property: all;
