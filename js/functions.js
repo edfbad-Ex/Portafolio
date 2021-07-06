@@ -254,8 +254,8 @@ window.addEventListener("load", function () {
       ProjectListChildCode.style.display = "flex";
       ProjectListChildWeb.style.display = "flex";
       ProjectListChildDescription.style.display = "flex";
-      ProjectListChildCode.style.opacity = "0";
-      ProjectListChildWeb.style.opacity = "0";
+      ProjectListChildCode.style.opacity = "1";
+      ProjectListChildWeb.style.opacity = "1";
       ProjectListChildDescription.style.opacity = "0";
 
       Down.style.display = "flex";
@@ -266,7 +266,7 @@ window.addEventListener("load", function () {
       TitleTechnologies.innerHTML = "Site created for the bank (easybank) with React JS and CSS (Flex Box)";
       
       ProjectListChildDescriptionTechnologiesSkills.style.display = "flex";
-      ProjectListChildDescriptionTechnologiesSkills.style.bottom = "16px";
+      ProjectListChildDescriptionTechnologiesSkills.style.bottom = "58px";
 
     }
     else{
@@ -342,8 +342,8 @@ window.addEventListener("load", function () {
       ProjectListChildCodeCV.style.display = "flex";
       ProjectListChildWebCV.style.display = "flex";
       ProjectListChildDescriptionCV.style.display = "flex";
-      ProjectListChildCodeCV.style.opacity = "0";
-      ProjectListChildWebCV.style.opacity = "0";
+      ProjectListChildCodeCV.style.opacity = "1";
+      ProjectListChildWebCV.style.opacity = "1";
       ProjectListChildDescriptionCV.style.opacity = "0";
 
       Down.style.display = "flex";
@@ -356,7 +356,7 @@ window.addEventListener("load", function () {
       TitleTechnologies.innerHTML = "Site created for my CV with React JS and CSS (Flex Box)";
       
       ProjectListChildDescriptionTechnologiesSkillsCV.style.display = "flex";
-      ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "16px";
+      ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "58px";
 
       if(mql1.matches){
 
@@ -494,7 +494,7 @@ window.addEventListener("load", function () {
  
        ProjectListChildWebGeoAdmin.style.display = "flex";
        ProjectListChildDescriptionGeoAdmin.style.display = "flex";
-       ProjectListChildWebGeoAdmin.style.opacity = "0";
+       ProjectListChildWebGeoAdmin.style.opacity = "1";
        ProjectListChildDescriptionGeoAdmin.style.opacity = "0";
  
        Down.style.display = "flex";
@@ -507,7 +507,7 @@ window.addEventListener("load", function () {
        TitleTechnologies.innerHTML = "Site created for the system administrator with PHP, JS and CSS. The database is MySql";
        
        ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.display = "flex";
-       ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "16px";
+       ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "58px";
  
        if(mql1.matches){
  
@@ -639,7 +639,7 @@ window.addEventListener("load", function () {
 
       ProjectListChildWebGeoUser.style.display = "flex";
       ProjectListChildDescriptionGeoUser.style.display = "flex";
-      ProjectListChildWebGeoUser.style.opacity = "0";
+      ProjectListChildWebGeoUser.style.opacity = "1";
       ProjectListChildDescriptionGeoUser.style.opacity = "0";
 
       Down.style.display = "flex";
@@ -652,7 +652,7 @@ window.addEventListener("load", function () {
       TitleTechnologies.innerHTML = "Site created for the system client with PHP, JS and CSS. The database is MySql";
       
       ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.display = "flex";
-      ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "16px";
+      ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "58px";
 
       if(mql1.matches){
 
@@ -1851,28 +1851,22 @@ document.getElementById('Project-List').onscroll = function (){
 
   //Project 1
   let ProjectList = document.getElementById("Project-List");
-  let ProjectListChildCode = document.getElementById("Project-List-Child-Code");
-  let ProjectListChildWeb = document.getElementById("Project-List-Child-Web");
   let ProjectListChildDescription = document.getElementById("Project-List-Child-Description");
   let Down = document.getElementById("Down");
   let ProjectListChildDescriptionTechnologiesSkills = document.getElementById("Project-List-Child-Description-Technologies-Skills");
   let ProjectListChildDescription3 = document.getElementById("Project-List-Child-Description3");
   
   //Project 2
-  let ProjectListChildCodeCV = document.getElementById("Project-List-Child-Code-CV");
-  let ProjectListChildWebCV = document.getElementById("Project-List-Child-Web-CV");
   let ProjectListChildDescriptionCV = document.getElementById("Project-List-Child-Description-CV");
   let ProjectListChildDescriptionTechnologiesSkillsCV = document.getElementById("Project-List-Child-Description-Technologies-Skills-CV");
   let ProjectListChildDescription3CV = document.getElementById("Project-List-Child-Description3-CV");
   
   //Project 3
-  let ProjectListChildWebGeoAdmin = document.getElementById("Project-List-Child-Web-Geo-Admin");
   let ProjectListChildDescriptionGeoAdmin = document.getElementById("Project-List-Child-Description-Geo-Admin");
   let ProjectListChildDescriptionTechnologiesSkillsGeoAdmin = document.getElementById("Project-List-Child-Description-Technologies-Skills-Geo-Admin");
   let ProjectListChildDescription3GeoAdmin = document.getElementById("Project-List-Child-Description3-Geo-Admin");
 
   //Project 4
-  let ProjectListChildWebGeoUser = document.getElementById("Project-List-Child-Web-Geo-User");
   let ProjectListChildDescriptionGeoUser = document.getElementById("Project-List-Child-Description-Geo-User");
   let ProjectListChildDescriptionTechnologiesSkillsGeoUser = document.getElementById("Project-List-Child-Description-Technologies-Skills-Geo-User");
   let ProjectListChildDescription3GeoUser = document.getElementById("Project-List-Child-Description3-Geo-User");
@@ -1888,40 +1882,24 @@ document.getElementById('Project-List').onscroll = function (){
     //console.log("270");
 
     //Project 1
-    ProjectListChildCode.style.transition = "ease-in-out 500ms";
-    ProjectListChildCode.style.opacity = "1";
-    ProjectListChildWeb.style.transition = "ease-in-out 500ms";
-    ProjectListChildWeb.style.opacity = "1";
-
     ProjectListChildDescriptionTechnologiesSkills.style.bottom = "58px";
 
     ProjectListChildDescription3.style.borderBottomLeftRadius = "0px";
     ProjectListChildDescription3.style.borderBottomRightRadius = "0px";
 
     //Project 2
-    ProjectListChildCodeCV.style.transition = "ease-in-out 500ms";
-    ProjectListChildCodeCV.style.opacity = "1";
-    ProjectListChildWebCV.style.transition = "ease-in-out 500ms";
-    ProjectListChildWebCV.style.opacity = "1";
-
     ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "58px";
 
     ProjectListChildDescription3CV.style.borderBottomLeftRadius = "0px";
     ProjectListChildDescription3CV.style.borderBottomRightRadius = "0px";
 
     //Project3
-    ProjectListChildWebGeoAdmin.style.transition = "ease-in-out 500ms";
-    ProjectListChildWebGeoAdmin.style.opacity = "1";
-
     ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "58px";
 
     ProjectListChildDescription3GeoAdmin.style.borderBottomLeftRadius = "0px";
     ProjectListChildDescription3GeoAdmin.style.borderBottomRightRadius = "0px";
 
     //Project4
-    ProjectListChildWebGeoUser.style.transition = "ease-in-out 500ms";
-    ProjectListChildWebGeoUser.style.opacity = "1";
-
     ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "58px";
 
     ProjectListChildDescription3GeoUser.style.borderBottomLeftRadius = "0px";
@@ -1931,40 +1909,24 @@ document.getElementById('Project-List').onscroll = function (){
   else{
 
     //Project 1
-    ProjectListChildCode.style.transition = "ease-in-out 500ms";
-    ProjectListChildCode.style.opacity = "0";
-    ProjectListChildWeb.style.transition = "ease-in-out 500ms";
-    ProjectListChildWeb.style.opacity = "0";
-
     ProjectListChildDescriptionTechnologiesSkills.style.bottom = "16px";
 
     ProjectListChildDescription3.style.borderBottomLeftRadius = "4px";
     ProjectListChildDescription3.style.borderBottomRightRadius = "4px";
 
     //Project 2
-    ProjectListChildCodeCV.style.transition = "ease-in-out 500ms";
-    ProjectListChildCodeCV.style.opacity = "0";
-    ProjectListChildWebCV.style.transition = "ease-in-out 500ms";
-    ProjectListChildWebCV.style.opacity = "0";
-
     ProjectListChildDescriptionTechnologiesSkillsCV.style.bottom = "16px";
 
     ProjectListChildDescription3CV.style.borderBottomLeftRadius = "4px";
     ProjectListChildDescription3CV.style.borderBottomRightRadius = "4px";
 
     //Project3
-    ProjectListChildWebGeoAdmin.style.transition = "ease-in-out 500ms";
-    ProjectListChildWebGeoAdmin.style.opacity = "0";
-
     ProjectListChildDescriptionTechnologiesSkillsGeoAdmin.style.bottom = "16px";
 
     ProjectListChildDescription3GeoAdmin.style.borderBottomLeftRadius = "4px";
     ProjectListChildDescription3GeoAdmin.style.borderBottomRightRadius = "4px";
 
     //Project4
-    ProjectListChildWebGeoUser.style.transition = "ease-in-out 500ms";
-    ProjectListChildWebGeoUser.style.opacity = "0";
-
     ProjectListChildDescriptionTechnologiesSkillsGeoUser.style.bottom = "16px";
 
     ProjectListChildDescription3GeoUser.style.borderBottomLeftRadius = "4px";
