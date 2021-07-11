@@ -1102,9 +1102,12 @@ ul {
 .InterestsDates {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 98%;
   height: 330px;
   margin-top: 70px;
+  position: absolute;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .InterestsDate {
@@ -1119,13 +1122,116 @@ ul {
   background-color: #9e9e9e2a;
   transition: ease-in-out 350ms;
   border-radius: 2px;
+  opacity: 0.85;
 }
 
 .InterestsDate-child:hover {
   cursor: pointer;
   background-color: #9e9e9e62;
-  transform: translate(2px, 2px);
+  opacity: 1;
 }
+
+
+.InterestsDate:nth-child(1) > .InterestsDate-child:nth-child(1){
+
+  background: url(../img/astronomia.jpg) left center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate:nth-child(1) > .InterestsDate-child:nth-child(2){
+
+  background: url(../img/videojuegos.png) left center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate:nth-child(1) > .InterestsDate-child:nth-child(3){
+
+  background: url(../img/rock.png) left center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate:nth-child(1) > .InterestsDate-child:nth-child(4){
+
+  background: url(../img/genetica.jpg) left center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate:nth-child(2) > .InterestsDate-child:nth-child(1){
+
+  background: url(../img/analisis-datos.jpg) left center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate:nth-child(2) > .InterestsDate-child:nth-child(2){
+
+  background: url(../img/rap.jpg) top center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate:nth-child(2) > .InterestsDate-child:nth-child(3){
+
+  background: url(../img/desarrollo-web.png) left center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate:nth-child(2) > .InterestsDate-child:nth-child(4){
+
+  background: url(../img/algoritmo.jpg) left center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.InterestsDate-child-span{
+
+  position: absolute;
+  color: black;
+  text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-top: 65px;
+
+}
+
 
 .services {
   width: 100%;

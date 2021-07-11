@@ -216,7 +216,7 @@
   }
 
   .Container-about {
-    height: 1635px;
+    height: 3310px;
     transform: scale(0.9);
     margin-left: -0.8%;
   }
@@ -375,21 +375,30 @@
 
   .InterestsDates {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: flex-start;
-    width: 97%;
-    margin-left: 10px;
+    width: 97.7%;
+    margin-left: 7px;
     margin-right: 10px;
-    height: 330px;
+    height: 2000px;
     margin-top: 70px;
     position: absolute;
   }
 
   .InterestsDate {
-    flex-grow: 1;
     display: flex;
+    height: auto;
     flex-direction: column;
   }
+
+  .InterestsDate-child-span{
+
+    margin-top: 95px;
+    font-size: 30px;
+    font-weight: 600;
+  
+  }
+
 
   /*Section Services*/
 

@@ -220,7 +220,7 @@ window.addEventListener("load", function () {
       ProjectList.style.height = "0vh";
 
     }
-
+    
   });
 
   ProjectListChild1.style.flexGrow = "1";
@@ -1642,7 +1642,7 @@ function fixedNav1() {
 
   else if (mql2.matches) {
     window.scroll({
-      top: 314,
+      top: 365,
       left: 0,
       behavior: "smooth",
     });
@@ -1650,7 +1650,7 @@ function fixedNav1() {
 
   else if (mql3.matches) {
     window.scroll({
-      top: 339,
+      top: 390,
       left: 0,
       behavior: "smooth",
     });
@@ -1658,7 +1658,7 @@ function fixedNav1() {
 
   else if (mql4.matches) {
     window.scroll({
-      top: 350,
+      top: 405,
       left: 0,
       behavior: "smooth",
     });
@@ -1666,7 +1666,7 @@ function fixedNav1() {
 
   else if (mql5.matches) {
     window.scroll({
-      top: 372,
+      top: 430,
       left: 0,
       behavior: "smooth",
     });
@@ -1674,7 +1674,7 @@ function fixedNav1() {
 
   else if (mql6.matches) {
     window.scroll({
-      top: 345,
+      top: 403,
       left: 0,
       behavior: "smooth",
     });
@@ -1682,7 +1682,7 @@ function fixedNav1() {
 
   else if (mql7.matches) {
     window.scroll({
-      top: 380,
+      top: 423,
       left: 0,
       behavior: "smooth",
     });
@@ -1717,7 +1717,7 @@ function fixedNav2() {
 
   else if (mql2.matches) {
     window.scroll({
-      top: 2178,
+      top: 3820,
       left: 0,
       behavior: "smooth",
     });
@@ -1725,7 +1725,7 @@ function fixedNav2() {
 
   else if (mql3.matches) {
     window.scroll({
-      top: 2003,
+      top: 3645,
       left: 0,
       behavior: "smooth",
     });
@@ -1733,7 +1733,7 @@ function fixedNav2() {
 
   else if (mql4.matches) {
     window.scroll({
-      top: 1974,
+      top: 3630,
       left: 0,
       behavior: "smooth",
     });
@@ -1741,7 +1741,7 @@ function fixedNav2() {
 
   else if (mql5.matches) {
     window.scroll({
-      top: 1998,
+      top: 3655,
       left: 0,
       behavior: "smooth",
     });
@@ -1749,7 +1749,7 @@ function fixedNav2() {
 
   else if (mql6.matches) {
     window.scroll({
-      top: 1930,
+      top: 3585,
       left: 0,
       behavior: "smooth",
     });
@@ -1757,7 +1757,7 @@ function fixedNav2() {
 
   else if (mql7.matches) {
     window.scroll({
-      top: 1946,
+      top: 3587,
       left: 0,
       behavior: "smooth",
     });
@@ -1791,7 +1791,7 @@ function fixedNav3() {
 
   else if (mql2.matches) {
     window.scroll({
-      top: 4515,
+      top: 6160,
       left: 0,
       behavior: "smooth",
     });
@@ -1799,7 +1799,7 @@ function fixedNav3() {
 
   else if (mql3.matches) {
     window.scroll({
-      top: 4170,
+      top: 5810,
       left: 0,
       behavior: "smooth",
     });
@@ -1807,7 +1807,7 @@ function fixedNav3() {
 
   else if (mql4.matches) {
     window.scroll({
-      top: 4045,
+      top: 5703,
       left: 0,
       behavior: "smooth",
     });
@@ -1815,7 +1815,7 @@ function fixedNav3() {
 
   else if (mql5.matches) {
     window.scroll({
-      top: 4070,
+      top: 5730,
       left: 0,
       behavior: "smooth",
     });
@@ -1823,7 +1823,7 @@ function fixedNav3() {
 
   else if (mql6.matches) {
     window.scroll({
-      top: 3155,
+      top: 4813,
       left: 0,
       behavior: "smooth",
     });
@@ -1831,7 +1831,7 @@ function fixedNav3() {
 
   else if (mql7.matches) {
     window.scroll({
-      top: 3060,
+      top: 4700,
       left: 0,
       behavior: "smooth",
     });
