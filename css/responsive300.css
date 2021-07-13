@@ -201,11 +201,11 @@
 
   /*Animations faces*/
   .FacesT {
-    position: relative;
+    position: absolute;
     width: 570px;
     height: 594px;
     margin-top: -10px;
-    left: 0%;
+    left: -18vh;
     transform: scale(0.4);
     background: url("../img/faceF.png") center center no-repeat;
     animation: FacesIntermitente 7s infinite;
