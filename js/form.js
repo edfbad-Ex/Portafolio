@@ -23,7 +23,7 @@ document.querySelector("#submit").addEventListener('click', function(){
 
     if (FullName === "" || Email === "" || Service === "" || Message === "") {
         
-        alert(`Faltan algunos datos, ${FullName}`);
+        alert(`Faltan algunos datos ${FullName}.`);
         return false;
 
     }
