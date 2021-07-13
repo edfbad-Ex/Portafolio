@@ -201,15 +201,15 @@
 
   /*Animations faces*/
   .FacesT {
-    width: 230px;
-    height: 360px;
-    margin-top: 50px;
-    margin-left: 0%;
-    left: 30px;
-    background: url("../img/faceR.png") center center no-repeat;
+    position: absolute;
+    width: 570px;
+    height: 594px;
+    margin-top: -10px;
+    left: -30%;
+    transform: scale(0.6);
+    background: url("../img/faceF.png") center center no-repeat;
     animation: FacesIntermitente 7s infinite;
     transition: ease-in-out;
-    transform: rotate(15deg);
   }
 
   /*Section About*/
@@ -433,12 +433,10 @@
     flex-direction: column;
   }
 
-  .InterestsDate-child-span{
-
+  .InterestsDate-child-span {
     margin-top: 100px;
     font-size: 27px;
     font-weight: 600;
-  
   }
 
   /*Section Services*/
@@ -608,7 +606,7 @@
     }
     25% {
       opacity: 0.5;
-      transform: rotate(-10deg);
+      transform: scale(0.4) rotate(-10deg);
 
       /*    margin-top: 145px;*/
     }
@@ -621,5 +619,4 @@
       opacity: 0;
     }
   }
-
 }
