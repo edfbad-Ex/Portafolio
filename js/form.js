@@ -1,7 +1,5 @@
 document.querySelector("#submit").addEventListener('click', function(){
 
-    console.log("button");
-
     let Phone = "522229033821";
     
     let FullName = document.querySelector("#FullName").value;
