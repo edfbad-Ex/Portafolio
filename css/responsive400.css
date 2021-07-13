@@ -198,12 +198,12 @@
 
   /*Animations faces*/
   .FacesT {
-    position: fixed;
+    position: relative;
     width: 570px;
     height: 594px;
     margin-top: -10px;
-    left: -11.8%;
-    transform: scale(0.6);
+    left: 0%;
+    transform: scale(0.4);
     background: url("../img/faceF.png") center center no-repeat;
     animation: FacesIntermitente 7s infinite;
     transition: ease-in-out;
@@ -558,6 +558,7 @@
   @keyframes FacesIntermitente {
     0% {
       opacity: 0;
+      transform: scale(0.4);
     }
     25% {
       opacity: 0.5;
@@ -568,10 +569,11 @@
     50% {
       opacity: 0.3;
       /**    margin-left: 71%;*/
-      transform: rotate(10deg);
+      transform: scale(0.4) rotate(10deg);
     }
     100% {
       opacity: 0;
+      transform: scale(0.4);
     }
   }
 }
