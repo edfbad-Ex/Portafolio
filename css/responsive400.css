@@ -198,11 +198,11 @@
 
   /*Animations faces*/
   .FacesT {
-    position: absolute;
+    position: fixed;
     width: 570px;
     height: 594px;
     margin-top: -10px;
-    left: -17.8%;
+    left: -11.8%;
     transform: scale(0.6);
     background: url("../img/faceF.png") center center no-repeat;
     animation: FacesIntermitente 7s infinite;

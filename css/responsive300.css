@@ -201,7 +201,7 @@
 
   /*Animations faces*/
   .FacesT {
-    position: absolute;
+    position: fixed;
     width: 570px;
     height: 594px;
     margin-top: -10px;
