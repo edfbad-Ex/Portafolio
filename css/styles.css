@@ -1793,3 +1793,45 @@ svg {
 .childBars:focus {
   outline: none;
 }
+
+@media (min-width: 991px) and (max-width: 1075px) {
+  .aboutP1 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.788);
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    width: 55%;
+    margin: 50px 0px 0px 53px;
+    padding-right: 20px;
+  }
+
+  .ListDates {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 70%;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .ListDates-child {
+    flex-grow: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 903px) and (max-width: 990px) {
+  .aboutP1 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.788);
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    width: 55%;
+    margin: 50px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+  }
+}
